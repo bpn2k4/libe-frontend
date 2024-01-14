@@ -1,4 +1,4 @@
-import { ShopHeader } from '~/components'
+import { ShopFooter, ShopHeader } from '~/components'
 import { Container } from './Container'
 
 export const ShopLayout = ({ children }) => {
@@ -8,6 +8,7 @@ export const ShopLayout = ({ children }) => {
       <div className='w-full'>
         <ShopHeader />
         {children}
+        <ShopFooter />
       </div>
     </Container>
   )

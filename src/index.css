@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+.marquee {
+    display: inline-block;
+    animation: 3s scroll infinite linear;
+}
+  
+
 .no-scrollbar::-webkit-scrollbar {
     width: 0;
     height: 0;

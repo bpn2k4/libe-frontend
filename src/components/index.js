@@ -1,3 +1,6 @@
 export { GlobalComponent } from './GlobalComponent'
 export { GroupPictureHome } from './GroupPictureHome'
+export { GroupStory } from './GroupStory'
+export { Marquee } from './Marquee'
+export { ShopFooter } from './ShopFooter'
 export { ShopHeader } from './ShopHeader'
