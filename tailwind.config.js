@@ -2,6 +2,8 @@
 const utilities = {
   '.bg-main': { '@apply bg-white dark:bg-black': 0 },
   '.text-main': { '@apply text-sm text-black dark:text-white': 0 },
+  '.text-main-reverse': { '@apply text-sm text-white dark:text-black': 0 },
+  '.border-main': { '@apply border-gray-250 dark:border-gray-750': 0 },
   '.offset-0': { top: 0, left: 0, right: 0, bottom: 0 },
   '.center': { display: 'flex', alignItems: 'center', justifyContent: 'center' },
   '.clickable': { '@apply hover:scale-105 active:scale-95': 0 },

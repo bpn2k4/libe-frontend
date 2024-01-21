@@ -1,3 +1,4 @@
+import { Toast } from './Toast'
 import { MenuLeft } from './MenuLeft'
 import { Splash } from './Splash'
 
@@ -6,6 +7,7 @@ export const GlobalComponent = () => {
     <>
       <Splash />
       <MenuLeft />
+      <Toast />
     </>
   )
 }

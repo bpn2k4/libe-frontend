@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ShopLayout } from '~/layouts'
-import { Home } from '~/pages'
+import { Home, Login, Register, Test } from '~/pages'
 
 const routes = [
   {
@@ -10,7 +10,31 @@ const routes = [
         <Home />
       </ShopLayout>
     )
-  }
+  },
+  {
+    path: '/login',
+    element: (
+      <ShopLayout>
+        <Login />
+      </ShopLayout>
+    )
+  },
+  {
+    path: '/register',
+    element: (
+      <ShopLayout>
+        <Register />
+      </ShopLayout>
+    )
+  },
+  {
+    path: '/test',
+    element: (
+      <ShopLayout>
+        <Test />
+      </ShopLayout>
+    )
+  },
 ]
 
 const AppRouter = ({ children }) => {

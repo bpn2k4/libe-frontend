@@ -128,7 +128,7 @@ const ButtonCollection = ({ name, path, sub = [] }) => {
         </div>
       )}
       {sub.map(({ name, path }, index) => (
-        <button className={twMerge(
+        <button key={index} className={twMerge(
           'ml-4 block transition-all rounded overflow-hidden hover:bg-gray-80 hover:dark:bg-gray-750 pl-2 text-left',
           show ? 'leading-8' : 'leading-[0px]'
         )}>

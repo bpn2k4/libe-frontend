@@ -10,8 +10,8 @@ export const ShopHeader = () => {
         <button onClick={() => Util.menuLeft.show()}>SHOP</button>
       </div>
       <div className='flex-[3] center'>
-        <Link>
-          <h1 className='text-3xl font-bold p-4'>LIBÉ</h1>
+        <Link to='/'>
+          <h1 className='text-4xl font-bold p-4'>LIBÉ</h1>
         </Link>
       </div>
       <div className='flex-1 flex items-center justify-end'>
