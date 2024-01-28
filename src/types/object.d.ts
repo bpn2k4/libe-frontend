@@ -10,3 +10,10 @@ export type User = {
   accessToken?: String,
   refreshToken?: String
 }
+
+export type Product = {
+  productId: Number,
+  name: String,
+  price: Number,
+  images: String[]
+}

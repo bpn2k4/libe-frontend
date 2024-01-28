@@ -1,4 +1,7 @@
+export { Collection } from './Collection'
 export { Home } from './Home'
 export { Login } from './Login'
+export { Product } from './Product'
 export { Register } from './Register'
+export { Search } from './Search'
 export { Test } from './Test'

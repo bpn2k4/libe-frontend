@@ -16,7 +16,8 @@ export const GroupPictureHome = () => {
           <IconImagePlaceHolder className='z-[2]' />
         </div>
         <RoundedButton
-          title='Shop now' />
+          title='Shop now'
+          to="/collection" />
       </div>
       <div className='w-full md:w-1/2 aspect-1/2'>
         <div className='w-full aspect-square relative'>

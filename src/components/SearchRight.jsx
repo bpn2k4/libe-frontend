@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
 import { IconCancel, IconSearch } from './Icon'
 import Util from '~/utils'
+import { Link } from 'react-router-dom'
 
 export const SearchRight = () => {
   const [show, setShow] = useState(false)
@@ -71,9 +72,12 @@ export const SearchRight = () => {
 
           </div>
           <div>
-            <button className='w-full h-11 border border-main rounded font-semibold hover:bg-gray-80 hover:dark:bg-gray-750 center active:scale-[0.98] transition-transform'>
+            <Link
+              className='w-full h-11 border border-main rounded font-semibold hover:bg-gray-80 hover:dark:bg-gray-750 center active:scale-[0.98] transition-transform'
+              to='/search'
+              onClick={() => setShow(false)}>
               Xem them ket qua
-            </button>
+            </Link>
           </div>
         </div>
       </div>

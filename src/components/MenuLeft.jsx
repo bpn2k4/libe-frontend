@@ -1,7 +1,8 @@
 import { useLayoutEffect, useState } from 'react'
 import { twMerge } from 'tailwind-merge'
-import Util from '~/utils'
+
 import { IconCancel, IconCaret } from './Icon'
+import Util from '~/utils'
 
 export const MenuLeft = () => {
 

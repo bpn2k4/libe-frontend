@@ -1,0 +1,964 @@
+{
+  "products": [
+    {
+      "name": "Burnt Orange Crop Tee",
+      "price": 290000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/21.1_8d83860d050942d7acec373af12df0f1_master.jpg",
+        "https://product.hstatic.net/1000370106/product/21.2_793b1d96a6384d65bfa18f0bd470f0fc_large.jpg"
+      ]
+    },
+    {
+      "name": "Dark Brown Wide Leg Jeans",
+      "price": 650000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/19.1_d2688277d7b9445b9676c9a732fbf40a_master.jpg",
+        "https://product.hstatic.net/1000370106/product/19.2_f3a0e91335514347b1361e8aed357db0_large.jpg"
+      ]
+    },
+    {
+      "name": "Beige Wide Leg Jeans",
+      "price": 650000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/16.1_92107e42cde94d83b173b69ae9beb933_master.jpg",
+        "https://product.hstatic.net/1000370106/product/16.2_651a294633df445aad78b68cc31fa106_large.jpg"
+      ]
+    },
+    {
+      "name": "Navy Flower Texture Strappy Crop Top",
+      "price": 290000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/15.1_8735a0cdb0b746d3b2cb9a923c0d9d3d_master.jpg",
+        "https://product.hstatic.net/1000370106/product/15.2_2feae88511d84a01bd6f8b16f723e867_large.jpg"
+      ]
+    },
+    {
+      "name": "Brown Pleated Straight Leg Trousers",
+      "price": 470000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/14.1_08f10a31b6994f039aaa24e71ee7546f_master.jpg",
+        "https://product.hstatic.net/1000370106/product/14.2_607ec75c2b8142d697359027744c2ac8_large.jpg"
+      ]
+    },
+    {
+      "name": "White Lilly Collar Texture Shirt",
+      "price": 390000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/13.1_89e07c500ede45719beb693c02736943_master.jpg",
+        "https://product.hstatic.net/1000370106/product/13.2_2776d75a32ac44518640ae6dc0645ce7_large.jpg"
+      ]
+    },
+    {
+      "name": "Blue Denim Overshirt Jacket",
+      "price": 550000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/12.1_e347317a950347f682ce434161433c12_master.jpg",
+        "https://product.hstatic.net/1000370106/product/12.2_21e9900cb273493981cf639903abe2ec_large.jpg"
+      ]
+    },
+    {
+      "name": "White Ruffle Corset Top",
+      "price": 380000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/11.1_46806974a090477facce90c5888857b6_master.jpg",
+        "https://product.hstatic.net/1000370106/product/11.2_27e3413b98fe4f8b805acbc77ac35119_large.jpg"
+      ]
+    },
+    {
+      "name": "Navy Jersey Camisole",
+      "price": 220000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/10.1_a5ecdd64398c46438ece0cc92268b298_master.jpg",
+        "https://product.hstatic.net/1000370106/product/10.2_d6dffa54d36a4f6eb9fa0539bffcf276_large.jpeg"
+      ]
+    },
+    {
+      "name": "Ivory Khaki Boxy Jacket",
+      "price": 590000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/9.1_3119c07bb8e64f2189368541db3ecf2a_master.jpg",
+        "https://product.hstatic.net/1000370106/product/9.2_a36a80c19f4146d4bca766035f435fd7_large.jpg"
+      ]
+    },
+    {
+      "name": "Taro Khaki Boxy Jacket",
+      "price": 590000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/8.1_d5aa32c239a74797975758bd35fd972c_master.jpg",
+        "https://product.hstatic.net/1000370106/product/8.2_fef4eab832b342b49d9e2370ab77ce6b_large.jpg"
+      ]
+    },
+    {
+      "name": "Avocado Khaki Boxy Jacket",
+      "price": 590000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/7.1_c441d1af1a724afc99e90c9a4a751a85_master.jpg",
+        "https://product.hstatic.net/1000370106/product/7.2_625b04a5da804f24ba0110932013ae9b_large.jpg"
+      ]
+    },
+    {
+      "name": "Blue Shirred Waist Bow Side Maxi Skirt",
+      "price": 470000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/6.1_782f5ff0b49540fdaba1edbcfbb2ca58_master.jpg",
+        "https://product.hstatic.net/1000370106/product/6.2_8f35d048159948be935d8fd7ec8e36b2_large.jpg"
+      ]
+    },
+    {
+      "name": "White Sandy Waving Strappy Top",
+      "price": 310000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/5.1_57c4c4bf7cf3406b98360a37b1304643_master.jpg",
+        "https://product.hstatic.net/1000370106/product/5.2_12061ffd225b43979b768bf4dae65ea9_large.jpg"
+      ]
+    },
+    {
+      "name": "Pinstriped Pleated Seersucker Mini Skirt",
+      "price": 420000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/4.1_51f2ec27abb14197b59e60afe6d23f9c_master.jpg",
+        "https://product.hstatic.net/1000370106/product/4.2_bc6ca3d3b0f242e8910162029ffbb13b_large.jpg"
+      ]
+    },
+    {
+      "name": "Pinstripe Halter Neck Gilet Top",
+      "price": 360000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/3.1_bdad9240c1bc40cca35829986ed2a6e1_master.jpg",
+        "https://product.hstatic.net/1000370106/product/3.2_edd88113b78d4b19bff38adf3db2e1b3_large.jpg"
+      ]
+    },
+    {
+      "name": "Light Blue Flowers Drawstring Striped Mini Skirt",
+      "price": 360000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/2.1_c219689118224a59b6bb7f1e030daee3_master.jpg",
+        "https://product.hstatic.net/1000370106/product/2.2_c48c22928df04237a3951f62594b3b87_large.jpg"
+      ]
+    },
+    {
+      "name": "Light Blue Striped Peter Pan Crop Shirt",
+      "price": 420000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/1.1_0594ff4ec1bd4952b93aaf09ad42ba88_master.jpg",
+        "https://product.hstatic.net/1000370106/product/1.2_ad54433750d84dc598406a2038afff77_large.jpg"
+      ]
+    },
+    {
+      "name": "Floral Puff Sleeves Mini Dress",
+      "price": 450000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/9.1_20947f8bc23948a6a27bd087b46bf18a_master.jpg",
+        "https://product.hstatic.net/1000370106/product/9.2_4be11a0e90cf48c79dd2bc4b5b4f52ca_large.jpg"
+      ]
+    },
+    {
+      "name": "Violet Floral Off Shoulder Top",
+      "price": 320000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/8.1_46a64717a7904e6daa5bf45ad99c8f09_master.jpg",
+        "https://product.hstatic.net/1000370106/product/8.2_2e1ca55956c2468f9a21da534740d607_large.jpg"
+      ]
+    },
+    {
+      "name": "Mint Hairline Stripe Ruched Halter Neck Top",
+      "price": 410000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/7.1_ff54e642441e4dee9a8719bd3a0e16be_master.jpg",
+        "https://product.hstatic.net/1000370106/product/7.2_dcd23c9c090d407aa672f3c90f31ae59_large.jpg"
+      ]
+    },
+    {
+      "name": "Ivory Bow Tie Puff Sleeves Eyelet Blouse",
+      "price": 460000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/6.1_5f282aeed6784295b39b9cac8b8d60ed_master.jpg",
+        "https://product.hstatic.net/1000370106/product/6.2_7b389d82094c4ec3ab110956ee3fcec7_large.jpg"
+      ]
+    },
+    {
+      "name": "White Khaki Flower Belt Skorts",
+      "price": 420000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/3.1_85551b27bfc14fdb8ab0034cc61cb1cd_master.jpg",
+        "https://product.hstatic.net/1000370106/product/3.2_3fad56381ba6466a9911cd04282a27cd_large.jpg"
+      ]
+    },
+    {
+      "name": "Flowers Bloom Balanced Striped Oversized Shirt",
+      "price": 420000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/2.1_68aa07164d7a45908d5dc79e420fdf25_master.jpg",
+        "https://product.hstatic.net/1000370106/product/2.2_lon_b94c22c3a8ab4bf79ba002a44f3f6cd7_large.png"
+      ]
+    },
+    {
+      "name": "Flowers Bloom Balanced Striped Halter Neck Top",
+      "price": 370000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/1.1_c5d40ee83a29496a80145d55b3bd6d6b_master.jpg",
+        "https://product.hstatic.net/1000370106/product/1.2_549f36520f804002a0cef8d1ca72a114_large.jpg"
+      ]
+    },
+    {
+      "name": "Tiny Floral Ribbon Strappy Mini Dress",
+      "price": 460000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/31.1_71ffef5a5d2b43f687d3ef79498d3b54_master.jpg",
+        "https://product.hstatic.net/1000370106/product/31.2_6638a3c413bf4b3e861405d271806248_large.jpg"
+      ]
+    },
+    {
+      "name": "Black Flowers Embroidered Sheer Babydoll",
+      "price": 540000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/30.1_29d117065513437a8e390672abf50d40_master.jpg",
+        "https://product.hstatic.net/1000370106/product/30.2_b47a868ea52945798d7e5abc5ac2ce68_large.jpg"
+      ]
+    },
+    {
+      "name": "Purple Gingham Halter Neck Midi Dress",
+      "price": 520000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/29.1_9bd20c53353046c297d2d5a9360a5fb5_master.jpg",
+        "https://product.hstatic.net/1000370106/product/29.2_98df84e3dc0a4a52917184970362d395_large.jpg"
+      ]
+    },
+    {
+      "name": "Bow Ribbon Pink Lace Trimming Silk Midi Skirt",
+      "price": 480000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/28.1_29c9ae468c324a069a63d081bf87fa79_master.jpg",
+        "https://product.hstatic.net/1000370106/product/28.2_98cbe94416824a7e8e454d744e5f1c00_large.jpg"
+      ]
+    },
+    {
+      "name": "Indigo Halter Neck Denim Top",
+      "price": 400000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/27.1_2a26c6abbbaf4cf1b8345b704d704449_master.jpg",
+        "https://product.hstatic.net/1000370106/product/27.2_6d709ff96f164f4dbada281887b0380b_large.jpg"
+      ]
+    },
+    {
+      "name": "Blue Gray Ribbed Camisole",
+      "price": 240000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/26.1_3c9b1113d19749a099d52c2ac768cebf_master.jpg",
+        "https://product.hstatic.net/1000370106/product/26.2_b5e15e266880405886579a466a3966db_large.jpg"
+      ]
+    },
+    {
+      "name": "White Bow Embroidered Oversized Oxford Shirt",
+      "price": 420000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/25.1_8237884dee2e4ed3ab7faaf355376be5_master.jpg",
+        "https://product.hstatic.net/1000370106/product/25.2_47114c7904d441d1a55597fb9e494809_large.jpg"
+      ]
+    },
+    {
+      "name": "Coral Pink Ribbon Beaded Camisole",
+      "price": 240000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/24.1_66fac8007cdc4039a85f72fef036b455_master.jpg",
+        "https://product.hstatic.net/1000370106/product/24.2_03ac888ec1af48bf86a952de315de2ed_large.jpg"
+      ]
+    },
+    {
+      "name": "Blue Bow Embroidered Oversized Shirt",
+      "price": 420000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/23.1_da2717e23a21405c801432fd72e29198_master.jpg",
+        "https://product.hstatic.net/1000370106/product/23.2_02fed141ba0b4d678e4c0fd3d7e12fd2_large.jpg"
+      ]
+    },
+    {
+      "name": "Tiny Bow White Sequin Mini Skirt",
+      "price": 350000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/22.4_32b5a53d7d4a45edbdbe6fad23b6a9bd_master.jpg",
+        "https://product.hstatic.net/1000370106/product/22.2_ce51352d8a6c488db34bbac043cd7d2a_large.jpg"
+      ]
+    },
+    {
+      "name": "Red Bow Embroidered Oversized Oxford Shirt",
+      "price": 420000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/21.1_a03b7a4c41404b1d851eec39b96dc383_master.jpg",
+        "https://product.hstatic.net/1000370106/product/21.2_d89dea2179994cb29d6c39c9697549f0_large.jpg"
+      ]
+    },
+    {
+      "name": "Bubble Gum Pink Lace Trimming Midi Skirt",
+      "price": 490000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/20.1_9cf19dc7d09146c2a64112f7b05ab572_master.jpg",
+        "https://product.hstatic.net/1000370106/product/20.2_dca6e4b19c5e46a7aef2fcde715b9d9f_large.jpg"
+      ]
+    },
+    {
+      "name": "Bubble Gum Pink Sleeveless Lace Trimming Top",
+      "price": 360000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/19.1_c38da86832fd43d5be29bbe838e6ecc6_master.jpg",
+        "https://product.hstatic.net/1000370106/product/19.2_44102934430a458db718cb267ae2b800_large.jpg"
+      ]
+    },
+    {
+      "name": "Dark Blue Wash Low Rise Slim Relaxed Jeans",
+      "price": 650000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/18.1_2fca44fd21394551acac1226eea37013_master.jpg",
+        "https://product.hstatic.net/1000370106/product/18.2_f0c66e3cd065425299877d2ac321ec3a_large.jpg"
+      ]
+    },
+    {
+      "name": "Floral Openback Flared Long Sleeves Lace Top",
+      "price": 280000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/17.1_98ac9f6334ef4788a255f6d7355e72ca_master.jpg",
+        "https://product.hstatic.net/1000370106/product/17.2_e9f3099cd00d469ca84780fcec395fc6_large.jpg"
+      ]
+    },
+    {
+      "name": "Dark Blue Distressed Wash Jorts",
+      "price": 550000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/16.1_b6ae13b6c2bf433a9b63c2e66588b1a7_master.jpg",
+        "https://product.hstatic.net/1000370106/product/16.2_1be83b996f824c2a8492a67e79127a84_large.jpg"
+      ]
+    },
+    {
+      "name": "Rainbow Striped Long Sleeves Top",
+      "price": 260000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/15.1_c464ff9d11d2446fbbf8b35000eef3e6_master.jpg",
+        "https://product.hstatic.net/1000370106/product/15.2_17c0f1823c304c1e99e906c51493a4cf_large.jpg"
+      ]
+    },
+    {
+      "name": "Black Puff Sleeves Flowers Texture Sheer Mini Dress",
+      "price": 460000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/14.1_d7869c79e545484c99132bf994de1503_master.jpg",
+        "https://product.hstatic.net/1000370106/product/14.2_4c0d4feca59c46bbad127c946f386b4f_large.jpg"
+      ]
+    },
+    {
+      "name": "Blue Striped Wide Leg Trousers",
+      "price": 490000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/13.1_53c2d1d9a5514e4ba3e6d92efeb63ecb_master.jpg",
+        "https://product.hstatic.net/1000370106/product/13.2_99bd34057bd14a52ab2a2d92a7bd7342_large.jpg"
+      ]
+    },
+    {
+      "name": "Blue Striped Halter Neck Gilet Top",
+      "price": 350000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/12.1_a31f6c4eab954cff862a16d90d801060_master.jpg",
+        "https://product.hstatic.net/1000370106/product/12.2_fd048ecf024649a6b9e11e2079fa790b_large.jpg"
+      ]
+    },
+    {
+      "name": "White Flowers Embellished Crop Top",
+      "price": 310000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/10.1_db9d63e6ecb34a9196e10067d072c0ce_master.jpg",
+        "https://product.hstatic.net/1000370106/product/10.2_b4a0e7c685aa4a4ea741e9434be269ec_large.jpg"
+      ]
+    },
+    {
+      "name": "Rainbow Sprinkles Ribbon Trimming Mini Skirt",
+      "price": 300000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/9.1_95c16811c2114e9dbba63fa38ece7777_master.jpg",
+        "https://product.hstatic.net/1000370106/product/9.2_d78af4920274455fbf62a2064f249f1d_large.jpg"
+      ]
+    },
+    {
+      "name": "Rainbow Sprinkles Long-Flared Sleeves Ribbon Trimming Top",
+      "price": 320000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/8.1_5d38be2100474152b47556bd18ad4fa2_master.jpg",
+        "https://product.hstatic.net/1000370106/product/8.2_486d1717f2bf453e8097dbb999fbba20_large.jpg"
+      ]
+    },
+    {
+      "name": "Indigo Mid Rise Flared Jeans",
+      "price": 650000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/7.1_74cfda9556e44ea6a24a81c4b37727ca_master.jpg",
+        "https://product.hstatic.net/1000370106/product/7.2_ee88c54f7f984f609b616eedf604c246_large.jpg"
+      ]
+    },
+    {
+      "name": "White Bow Printed Comfy Fit Tee",
+      "price": 310000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/6.1_93dc9c2e8a08475aa9823f89c3051207_master.jpg",
+        "https://product.hstatic.net/1000370106/product/6.2_0537b3c7e7234303a3eb8e55cf9b2dc9_large.jpg"
+      ]
+    },
+    {
+      "name": "Black Bow Printed Comfy Fit Tee",
+      "price": 310000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/5.1_a27e34767efd448fb6b91694e71fb4bb_master.jpg",
+        "https://product.hstatic.net/1000370106/product/5.2_f7c67865303e430d9ee8a345a81b72ca_large.jpg"
+      ]
+    },
+    {
+      "name": "Medium Blue Low Rise Whisker Wash Flared Jeans",
+      "price": 650000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/4.1_7180f514facf4ab18fcde9a0da95619a_master.jpg",
+        "https://product.hstatic.net/1000370106/product/4.2_f5fc8eb4d27d4e99ace92a3c8e704101_large.jpg"
+      ]
+    },
+    {
+      "name": "Bolero Tie-dyed Green Embroidered Buckle Cardigan",
+      "price": 380000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/3.1_382f617208224f55a973800828b7d8ad_master.jpg",
+        "https://product.hstatic.net/1000370106/product/3.2_5b0b254ed3924ab49818d3d40a6d3332_large.jpg"
+      ]
+    },
+    {
+      "name": "Medium Blue Wash Denim Mini Skirt",
+      "price": 490000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/2.1_a63c34d1bdc046f7b6ca15240605878e_master.jpg",
+        "https://product.hstatic.net/1000370106/product/2.2_5b5e35143b9b4c9fa74570f659832af3_large.jpg"
+      ]
+    },
+    {
+      "name": "Bolero Black Embroidered Buckle Cardigan",
+      "price": 380000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/1.1_0c3f9d43de5b449780c70db83bee6a9c_master.jpg",
+        "https://product.hstatic.net/1000370106/product/1.2_c695aabe88b74eeba6c2d544d0f32271_large.jpg"
+      ]
+    },
+    {
+      "name": "White Ruched Bow Tie Waistband Midi Skirt",
+      "price": 450000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/14.1_38bf3917e3d044619eb3b89368bc3e5d_master.jpg",
+        "https://product.hstatic.net/1000370106/product/14.2_ae4a9b7e69244f8cbdb875cb40dcfdec_large.jpg"
+      ]
+    },
+    {
+      "name": "Navy Striped Cropped Sleeveless Denim Shirt",
+      "price": 400000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/13.1_2b36b4bc781a48c4b43a68b70a94ddbb_master.jpg",
+        "https://product.hstatic.net/1000370106/product/13.2_96c68a6b0d174932926c4b1f26617609_large.jpg"
+      ]
+    },
+    {
+      "name": "Dark Aqua Bermuda Wash Jeans",
+      "price": 520000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/12.1_288265715ebc4016af5716c39305ca32_master.jpg",
+        "https://product.hstatic.net/1000370106/product/12.2_17c87ca902eb48918a34bbfe12c60b4d_large.jpg"
+      ]
+    },
+    {
+      "name": "Ivory Peter Pan Collar Sleeveless Tie Front Eyelet Top",
+      "price": 450000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/11.1_0835b1e684074a6a8eb5086b29453a3a_master.jpg",
+        "https://product.hstatic.net/1000370106/product/11.2_363c68ac0a074ff7aa029c676425a5f7_large.jpg"
+      ]
+    },
+    {
+      "name": "Bohemian Red Floral Long Puff Sleeves Top",
+      "price": 350000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/10.1_04095a22403348cfa70684bda2150d42_master.jpg",
+        "https://product.hstatic.net/1000370106/product/10.2_7b66b530594e4d24bef8c71b762879fe_large.jpg"
+      ]
+    },
+    {
+      "name": "Ivory Embroidered Bow Tie Eyelet Top",
+      "price": 350000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/8.1_b106bd6594fb4131a36517d52f37b20f_master.jpg",
+        "https://product.hstatic.net/1000370106/product/8.2_97003793a8a34dba872b0422c58fbbab_large.jpg"
+      ]
+    },
+    {
+      "name": "Red Embroidered Bow Tie Eyelet Top",
+      "price": 350000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/7.1_60b6839f352d40c3bb804f6ad1100879_master.jpg",
+        "https://product.hstatic.net/1000370106/product/7.2_997f49c2ae15445eb8eddebd3e2ba5cd_large.jpg"
+      ]
+    },
+    {
+      "name": "Beige Pleated Lace Trimming Bow Belt Khaki Mini Dress",
+      "price": 600000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/6.1_4f44c89b0eea4fdc95ff3d62eef22eb5_master.jpg",
+        "https://product.hstatic.net/1000370106/product/6.2_811f96739ea647228ed9e3f8897ac8af_large.jpg"
+      ]
+    },
+    {
+      "name": "Black Lace Flared Pants",
+      "price": 470000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/5.1_93fff07af75e47e89e6d5c19bf7b282e_master.jpg",
+        "https://product.hstatic.net/1000370106/product/5.2_996937728ef344818e3cdf05b06f97fd_large.jpg"
+      ]
+    },
+    {
+      "name": "White Lace Trimming Long Sleeves Tie Front Top",
+      "price": 380000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/4.1_8ca97651035e4a5aa912ed0a4a5fb493_master.jpg",
+        "https://product.hstatic.net/1000370106/product/4.2_b40e255a99304006bb64ce63775dc2e9_large.jpg"
+      ]
+    },
+    {
+      "name": "Red Sleeveless Pleated Bow Mini Dress",
+      "price": 510000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/3.1_c89fba63754442aab178300fab79a61e_master.jpg",
+        "https://product.hstatic.net/1000370106/product/3.2_45cc4d50822d4b1096cc2cefa11ed766_large.jpg"
+      ]
+    },
+    {
+      "name": "Beige Lace Trimming Khaki Midi Skirt",
+      "price": 500000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/2.1_6bb746c99ae8465e971c1c89f6072e57_master.jpg",
+        "https://product.hstatic.net/1000370106/product/2.2_408bbe86a1a94817af29197068292444_large.jpg"
+      ]
+    },
+    {
+      "name": "Beige Lace Trimming Khaki Boxy Jacket",
+      "price": 650000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/1.1_81140bbd70cb49ae94e83547cc4ba54a_master.jpg",
+        "https://product.hstatic.net/1000370106/product/1.2_1f77b4f0c4134dd7ada287a01f82182c_large.jpg"
+      ]
+    },
+    {
+      "name": "Olive Green Flowy Midi Skirt",
+      "price": 470000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/18.1_d91eab260566488e8890f9fdcad70154_master.jpg",
+        "https://product.hstatic.net/1000370106/product/18.2_706d0c4bd40f4324b2cdd00336f04a49_large.jpg"
+      ]
+    },
+    {
+      "name": "Olive Green Sheer Flowy Oversized Shirt",
+      "price": 380000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/17.1_c912486bdb9e4335ba884ab63c92c26a_master.jpg",
+        "https://product.hstatic.net/1000370106/product/17.2_4efdc621edad4383bb311418e21db0bc_large.jpg"
+      ]
+    },
+    {
+      "name": "White Floral Embellished Ruffle Midi Dress",
+      "price": 590000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/14.1_caf525df300d4c7f94fe33c1f904cd12_master.jpg",
+        "https://product.hstatic.net/1000370106/product/14.2_e7f02ef258ea46a181d352d123edf4b1_large.jpg"
+      ]
+    },
+    {
+      "name": "Rose Brown Floral Embellished Bubble Mini Dress",
+      "price": 510000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/13.1_bdb434b46c33405da667aa63ed41a2a1_master.jpg",
+        "https://product.hstatic.net/1000370106/product/13.2_37808d09d1eb453a8a7b4336fd2e8b6a_large.jpg"
+      ]
+    },
+    {
+      "name": "Black Floral Embellished Bubble Mini Dress",
+      "price": 510000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/12.1_6b3f8bf2a9204a7487eecaa8f11f16ac_master.jpg",
+        "https://product.hstatic.net/1000370106/product/12.2_716c9f1e5f0f428080d7ba950be6e256_large.jpg"
+      ]
+    },
+    {
+      "name": "Orange Shadow Striped Flower Belt Shirt",
+      "price": 440000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/11.1_adf830b6de9a4aa2bd66edc8901aaac4_master.jpg",
+        "https://product.hstatic.net/1000370106/product/11.2_7356235d166b44068dc6bf7fdb844cbd_large.jpg"
+      ]
+    },
+    {
+      "name": "Grey Acid Wash Denim Mini Skirt",
+      "price": 480000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/10.1_ae205016d5ea48a6b47667da29de2db8_master.jpg",
+        "https://product.hstatic.net/1000370106/product/10.2_1af7aa69eb644d8d89359751abf25594_large.jpg"
+      ]
+    },
+    {
+      "name": "Flowers Bloom Ivory T-shirt",
+      "price": 370000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/9.1_6cb5eaefb94c49fea2bec14bbdbbe90c_master.jpg",
+        "https://product.hstatic.net/1000370106/product/9.2_2897f4bae3284ff2871123ec78499893_large.jpg"
+      ]
+    },
+    {
+      "name": "White Ruffle Lace Midi Skirt",
+      "price": 470000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/8.1_5d7acc58f61b4db9a611189fe689c277_master.jpg",
+        "https://product.hstatic.net/1000370106/product/8.2_37d7a9bcd2e34e7e8ea51542d000a886_large.jpg"
+      ]
+    },
+    {
+      "name": "Flowers Bloom Blue T-shirt",
+      "price": 360000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/7.1_d2be7a48967440f58cb5651e6e987a32_master.jpg",
+        "https://product.hstatic.net/1000370106/product/7.2_51c71a1a5fcd468ebf7344e62bf823b5_large.jpg"
+      ]
+    },
+    {
+      "name": "Magenta Floral Embellished Off Shoulder Top",
+      "price": 330000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/5.1_e37374701208437fb5e9a0f57f2d2011_master.jpg",
+        "https://product.hstatic.net/1000370106/product/5.2_0b2fc6ce627a43118def61d512149c62_large.jpg"
+      ]
+    },
+    {
+      "name": "Black Floral Embellished Flared Trousers",
+      "price": 490000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/4.1_46dea2ba968a4f569587222e4cc3946e_master.jpg",
+        "https://product.hstatic.net/1000370106/product/4.2_f1ea2ea060fc4161bda3e379ff6b1b47_large.jpg"
+      ]
+    },
+    {
+      "name": "White Off Shoulder Flower Embellished Ruched Top",
+      "price": 390000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/3.1_b94340cce3444569904f86aeca718ba2_master.jpg",
+        "https://product.hstatic.net/1000370106/product/3.2_beb2c68d99c348f783d09f65072cc3a2_large.jpg"
+      ]
+    },
+    {
+      "name": "Brown Flower Embellished Eyelet Tube Top",
+      "price": 380000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/2.1_ea903256c4d94929bd281db11edd9c61_master.jpg",
+        "https://product.hstatic.net/1000370106/product/2.2_fd0b6eabaee14b82bf95c7157d7f0426_large.jpg"
+      ]
+    },
+    {
+      "name": "Hot Red Flower Embellished Eyelet Tube Top",
+      "price": 380000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/1.1_717189c490f44060ace95f232dd721c7_master.jpg",
+        "https://product.hstatic.net/1000370106/product/1.2_3ff167fe3f0945d7ab15848b7e8d9342_large.jpg"
+      ]
+    },
+    {
+      "name": "Vintage Checked Peplum Top",
+      "price": 390000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/1.1_1c3f17e80ed24395a4a30147934e95d0_master.jpg",
+        "https://product.hstatic.net/1000370106/product/1.2_fab3529ec3f34924ad20e7b724c46773_large.jpg"
+      ]
+    },
+    {
+      "name": "Vintage Floral Printed Lace Hem Midi Slip Dress",
+      "price": 570000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/18.1_lon_3875a7b2116f46ccb3dc9009080e4c83_master.png",
+        "https://product.hstatic.net/1000370106/product/18.2_lon_c43d262a94e541358d232f582424c72d_large.png"
+      ]
+    },
+    {
+      "name": "Vintage Floral Printed Khaki Mini Dress",
+      "price": 550000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/17.1_lon_1574f2a422f2476587dffb2caab5f30c_master.png",
+        "https://product.hstatic.net/1000370106/product/17.2_lon_3086949988a14de698a4b87314c7c1f9_large.png"
+      ]
+    },
+    {
+      "name": "Rattan Basket Blue Embroidered Midi Dress",
+      "price": 570000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/16.1_lon_53af3575d60e46fab7c38574db86cbe7_master.png",
+        "https://product.hstatic.net/1000370106/product/16.2_lon_1e85f7d5c307457190ba3263a8ea62f4_large.png"
+      ]
+    },
+    {
+      "name": "Blue Vintage Floral Printed Scarf",
+      "price": 190000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/15.1_lon_2177feca290b4976852f2ad9bbeaaea4_master.png",
+        "https://product.hstatic.net/1000370106/product/15.2_lon_b8fd72f0b3aa46bdb6132577880b29c3_large.png"
+      ]
+    },
+    {
+      "name": "Yellow Vintage Floral Printed Scarf",
+      "price": 190000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/14.1_lon_44dd7222abef48278c8256f5a8a00860_master.png",
+        "https://product.hstatic.net/1000370106/product/14.2_lon_355813b275b54a8fb8776e4f2a167cfc_large.png"
+      ]
+    },
+    {
+      "name": "Indigo Denim Midi Skirt",
+      "price": 540000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/13.1_lon_277e91a2145c4da3abaddc78979bb282_master.png",
+        "https://product.hstatic.net/1000370106/product/13.2_lon_4ce28493bd474bf6af8459822fe68a1e_large.png"
+      ]
+    },
+    {
+      "name": "White Scalloped Edge Embroidered Drawstring Straps Top",
+      "price": 420000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/12.1_lon_18e987d1d5d3413eb8c1e34e8a4e4921_master.png",
+        "https://product.hstatic.net/1000370106/product/12.2_lon_ba4e749ce8fb464fab4755c7e97a82da_large.png"
+      ]
+    },
+    {
+      "name": "White Ruched Floral Sticker Bag",
+      "price": 350000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/11.1_lon_0c143bf9247a4e0390657c0a62b269ac_master.png",
+        "https://product.hstatic.net/1000370106/product/11.2_lon_5f1cdfc5842149edab1e563a6e625d07_large.png"
+      ]
+    },
+    {
+      "name": "White Scalloped Edge Embroidered Mini Skirt",
+      "price": 450000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/10.1_lon_552d6412a57848238de5aee9af260f22_master.png",
+        "https://product.hstatic.net/1000370106/product/10.2_lon_7e484c7acb45471d855c07a1a2aec3bd_large.png"
+      ]
+    },
+    {
+      "name": "Red Crew Neck Fitted T-Shirt",
+      "price": 220000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/9.1_lon_4ac516e3dfd146d886efc1524836d96d_master.png",
+        "https://product.hstatic.net/1000370106/product/9.2_lon_f31d106901b54729b0a567ab5ae43bc1_large.png"
+      ]
+    },
+    {
+      "name": "Vintage Floral Printed Mini Skirt With Belt Charms",
+      "price": 430000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/8.1_lon_bfc7eddff27a4b6f86400ad9f6f851c4_master.png",
+        "https://product.hstatic.net/1000370106/product/8.2_lon_d62561422d104f05b1f502c154e7255e_large.png"
+      ]
+    },
+    {
+      "name": "White Flower Buttons Puff Sleeves Top",
+      "price": 420000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/7.1_lon_c15c8a5070af4e7e89efecec4dd98a30_master.png",
+        "https://product.hstatic.net/1000370106/product/7.2_lon_39d7c084abad4ccb9739c052328d04e3_large.png"
+      ]
+    },
+    {
+      "name": "Vintage Floral Printed Silky Midi Skirt",
+      "price": 490000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/6.1_lon_ec95f8c85eb4420e8303aec48ec17e2b_master.png",
+        "https://product.hstatic.net/1000370106/product/6.2_lon_f2079106491e403fbd71b7a370496379_large.png"
+      ]
+    },
+    {
+      "name": "White Scalloped Edge Embroidered Straps Top",
+      "price": 440000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/5.1_lon_180417d2df8f435c868122d14c284a1b_master.png",
+        "https://product.hstatic.net/1000370106/product/5.2_lon_8e504ff55be24d75b37fed84ae2aa805_large.png"
+      ]
+    },
+    {
+      "name": "Flowers Pendant Necklace",
+      "price": 100000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/4.1_lon_0a5cbd0a40ad43659a3280377bcd246d_master.png",
+        "https://product.hstatic.net/1000370106/product/4.2_lon_a97b464f952c4f76b02072c5913791e7_large.png"
+      ]
+    },
+    {
+      "name": "Medium Blue Wash Flared Jeans",
+      "price": 650000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/3.1_lon_ad2b9a343ac44c75bdcef03ae53cc354_master.png",
+        "https://product.hstatic.net/1000370106/product/3.2_lon_ea84c8c59d0444709f0c6744331ae735_large.png"
+      ]
+    },
+    {
+      "name": "White Scalloped Edge Embroidered One Shoulder Top",
+      "price": 430000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/2.1_lon_95a8db87ec3d4b989b0516ddbe735f4d_master.png",
+        "https://product.hstatic.net/1000370106/product/2.2_lon_3730c3069b2d4ef3b94506a7b874ea34_large.png"
+      ]
+    },
+    {
+      "name": "Vintage Floral Printed Chiffon Kimono Jacket",
+      "price": 410000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/1.1_lon_f98b91c6d3ca4009bf25121e19d837e1_master.png",
+        "https://product.hstatic.net/1000370106/product/1.2_lon_f729527e905c4e559ce8101444033e09_large.png"
+      ]
+    },
+    {
+      "name": "Red Bow Metallic Belt Charm Midi Skirt",
+      "price": 460000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/16.1_18186c6b3aea470a889f661874dfc230_master.jpg",
+        "https://product.hstatic.net/1000370106/product/16.2_03a19e3418e04c818802bcdbaa713d0b_large.jpg"
+      ]
+    },
+    {
+      "name": "Red Pleated Eyelet Handbag",
+      "price": 350000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/15.1_ff000cb55a9c4df4970112772bf3c253_master.jpg",
+        "https://product.hstatic.net/1000370106/product/15.2_85cad31fabf04702bf3a1d15de14f4ea_large.jpg"
+      ]
+    },
+    {
+      "name": "White Comfy Bubble Mini Dress",
+      "price": 460000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/17.1_5bb71022ba8443c8b320aa1f4fa50be9_master.jpg",
+        "https://product.hstatic.net/1000370106/product/17.2_c6a6a7684fd44c0f9b8ce0c6420f1e9f_large.jpg"
+      ]
+    },
+    {
+      "name": "Checked Ruffle Babydoll Dress",
+      "price": 500000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/16.1_9853d2f43eb340b1b206ac6da046aeae_master.jpg",
+        "https://product.hstatic.net/1000370106/product/16.2_71b98a81297f4da4987c1b21f0975e6b_large.jpg"
+      ]
+    },
+    {
+      "name": "White Front Tied Ruched Sleeve Top",
+      "price": 360000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/15.1_0f60aacf47a74d178fb19c17577450b8_master.jpg",
+        "https://product.hstatic.net/1000370106/product/15.2_10c1aa90b6464ff0a25435d945af7b24_large.jpg"
+      ]
+    },
+    {
+      "name": "Medium Blue Wash Hight Waist Flared Jeans",
+      "price": 650000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/14.1_96d8e4eae1894129be95b400ffa731b3_master.jpg",
+        "https://product.hstatic.net/1000370106/product/14.2_8216f7d2adf5404ea480275a8c14f537_large.jpg"
+      ]
+    },
+    {
+      "name": "White Off Shoulder Top",
+      "price": 370000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/13.1_e80797fc62ed4128b277db31e0ab084b_master.jpg",
+        "https://product.hstatic.net/1000370106/product/13.2_f3c71c7845e748539722ce7b6e07739a_large.jpg"
+      ]
+    },
+    {
+      "name": "Black Trimming Bow Details Flared Trousers",
+      "price": 490000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/12.1_a93bd3f7160e45f4973c3f0f46c4ebce_master.jpg",
+        "https://product.hstatic.net/1000370106/product/12.2_22f08fa846e445db9adef1b88c9fa84b_large.jpg"
+      ]
+    },
+    {
+      "name": "Barbie Pink Khaki Corset Style Top",
+      "price": 350000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/11.1_ffddeaf7b2b24d348b60c8ddf33e8529_master.jpg",
+        "https://product.hstatic.net/1000370106/product/11.2_ef1df9b5483c4ee79a87fb6727e36556_large.jpg"
+      ]
+    },
+    {
+      "name": "Beige Scallop Pockets Khaki Mini Skirt",
+      "price": 360000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/10.1_509e8065601f4c5aa74ecf8299afc387_master.jpg",
+        "https://product.hstatic.net/1000370106/product/10.2_86c64d6896a14711be6c878dcdd96faa_large.jpg"
+      ]
+    },
+    {
+      "name": "White Sleeveless Hook Detailed Top",
+      "price": 290000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/9.1_e826b61616214979b5dc2de644374db4_master.jpg",
+        "https://product.hstatic.net/1000370106/product/9.2_d974d37d909d41728194eb85fc9ef663_large.jpg"
+      ]
+    },
+    {
+      "name": "Beige Lace Ruffle Khaki Mini Skirt",
+      "price": 400000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/8.1_9ca6b46a931b4a579bde271f145e8ee9_master.jpg",
+        "https://product.hstatic.net/1000370106/product/8.2_790642e873394c4494f44a9f49edf3e2_large.jpg"
+      ]
+    },
+    {
+      "name": "Blue Butterfly Printed Smock Tiered Mini Dress",
+      "price": 490000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/6.1_4d7c4d412c1345bca3ce8f2bd91e24cb_master.jpg",
+        "https://product.hstatic.net/1000370106/product/6.2_847399f519a44541a0919ffef9e2375a_large.jpg"
+      ]
+    },
+    {
+      "name": "White Embroidered Mini Skirt",
+      "price": 380000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/5.1_fdd1ca2c1a464d21a67e34eb1348c916_master.jpg",
+        "https://product.hstatic.net/1000370106/product/5.2_6d0cb04de602453ca0fc274b400d8b3e_large.jpg"
+      ]
+    },
+    {
+      "name": "White Embroidered Oversized Shirt",
+      "price": 490000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/4.1_18c41ab49bb6447a9422970a9bd2c1e0_master.jpg",
+        "https://product.hstatic.net/1000370106/product/4.2_c50bcb16ff0d4988a11ff53e2f486b22_large.jpg"
+      ]
+    },
+    {
+      "name": "Scarlet Blue Floral Smock Tube Top",
+      "price": 330000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/3.1_b499405b70594274896d5bf95dc0a73f_master.jpg",
+        "https://product.hstatic.net/1000370106/product/3.2_9735db415c8c486db7e5017a85daf58c_large.jpg"
+      ]
+    },
+    {
+      "name": "Blue Wash Denim Shorts",
+      "price": 450000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/2.1_205229fa5ce8477a8589161a8848763c_master.jpg",
+        "https://product.hstatic.net/1000370106/product/2.2_a4253ed72e6540b5b7c1b024b4f64f5b_large.jpg"
+      ]
+    },
+    {
+      "name": "Floral Smock Puff Sleeves Top",
+      "price": 350000,
+      "images": [
+        "https://product.hstatic.net/1000370106/product/1.1_2fdc7f539a3d46f1bb7e0df31ab471a1_master.jpg",
+        "https://product.hstatic.net/1000370106/product/1.2_242b8c89476743eeb19dc40e97203880_large.jpg"
+      ]
+    }
+  ]
+}

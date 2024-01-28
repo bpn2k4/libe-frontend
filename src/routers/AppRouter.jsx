@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ShopLayout } from '~/layouts'
-import { Home, Login, Register, Test } from '~/pages'
+import { Collection, Home, Login, Product, Register, Search, Test } from '~/pages'
 
 const routes = [
   {
@@ -24,6 +24,30 @@ const routes = [
     element: (
       <ShopLayout>
         <Register />
+      </ShopLayout>
+    )
+  },
+  {
+    path: '/collection',
+    element: (
+      <ShopLayout>
+        <Collection />
+      </ShopLayout>
+    )
+  },
+  {
+    path: '/product',
+    element: (
+      <ShopLayout>
+        <Product />
+      </ShopLayout>
+    )
+  },
+  {
+    path: '/search',
+    element: (
+      <ShopLayout>
+        <Search />
       </ShopLayout>
     )
   },

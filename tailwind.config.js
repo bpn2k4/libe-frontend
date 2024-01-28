@@ -1,9 +1,9 @@
 /** @type {import('~/types').utilities} */
 const utilities = {
   '.bg-main': { '@apply bg-white dark:bg-black': 0 },
-  '.text-main': { '@apply text-sm text-black dark:text-white': 0 },
+  '.text-main': { '@apply text-black dark:text-white': 0 },
   '.text-main-reverse': { '@apply text-sm text-white dark:text-black': 0 },
-  '.border-main': { '@apply border-base-229 dark:border-base-54': 0 },
+  '.border-main': { '@apply border-base-200 dark:border-base-100': 0 },
   '.offset-0': { top: 0, left: 0, right: 0, bottom: 0 },
   '.center': { display: 'flex', alignItems: 'center', justifyContent: 'center' },
   '.clickable': { '@apply hover:scale-105 active:scale-95': 0 },
@@ -41,17 +41,23 @@ export default {
           55: "rgb(55, 55, 55)",
           60: "rgb(60, 60, 60)",
           83: "rgb(83, 83, 83)",
-          224: "rgb(242, 242, 242)",
+          90: "rgb(90, 90, 90)",
+          100: "rgb(100, 100, 100)",
+          115: "rgb(115, 115, 115)",
           168: "rgb(168, 168, 168)",
+          200: "rgb(200, 200, 200)",
           219: "rgb(219, 219, 219)",
           221: "rgb(221, 221, 221)",
+          224: "rgb(242, 242, 242)",
           229: "rgb(229, 229, 229)",
           232: "rgb(232, 232, 232)",
+          242: "rgb(242, 242, 242)",
         }
       },
       aspectRatio: {
         '1/2': '1 / 2',
         '9/14': '9 / 14',
+        '2/3': '2 / 3',
       },
       transitionProperty: {
         'height': 'height',
