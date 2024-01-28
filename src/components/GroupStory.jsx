@@ -51,10 +51,10 @@ const StoryItem = ({ index, name, firstImage, secondImage }) => {
           className='absolute top-0 left-0 w-full bg-no-repeat object-fill opacity-0 transition-opacity duration-500 hover:opacity-100'
           src={secondImage} />
       </button>
-      <div className='w-full md:w-1/2 center flex-col'>
+      <div className='w-full md:w-1/2 center flex-col py-6'>
         <span className='font-bold text-2xl text-center px-3'>{name}</span>
         <button className='my-5 hover:underline'>#libe3min</button>
-        <button className='border rounded-full px-5 py-3 hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-all hover:scale-105 active:scale-95'>View Story</button>
+        <button className='border rounded-full px-5 py-3 hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-all active:scale-95'>View Story</button>
       </div>
     </div>
   )

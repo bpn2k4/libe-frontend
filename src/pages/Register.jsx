@@ -96,7 +96,7 @@ export const Register = () => {
       <div className='md:flex-1 center md:border-l md:py-8 md:px-4'>
         <div className='w-full max-w-[500px] h-96 gap-6 flex flex-col'>
           <TextField
-            label={t("Full Name")}
+            label={t("FullName")}
             value={fullName}
             required={true}
             onChange={e => setFullName(e.target.value)} />

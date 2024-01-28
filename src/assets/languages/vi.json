@@ -1,1 +1,18 @@
-{}
+{
+  "AppName": "Libé",
+  "Shop": "Cửa hàng",
+  "ViewStory": "Xem tin",
+  "AboutUs": "Về chúng tôi",
+  "HelpAndInformation": "Trợ giúp và thông tin",
+  "CustomerService": "Dịch vụ khách hàng",
+  "Close": "Đóng",
+  "Search": "Tìm kiếm",
+  "Cart": "Giỏ hàng",
+  "Login": "Đăng nhập",
+  "Register": "Đăng ký",
+  "FullName": "Họ và tên",
+  "Username": "Tên đăng nhập",
+  "Phone": "Số điện thoại",
+  "Email": "Email",
+  "Password": "Mật khẩu"
+}

@@ -23,7 +23,7 @@ export const Login = () => {
   return (
     <div className='Login w-full min-h-[400px] md:min-h-[calc(100vh-80px)] flex flex-col md:flex-row'>
       <div className='md:flex-1 center py-12'>
-        <span className='text-4xl font-bold border-b-[4px] border-black dark:border-white pb-3 transition-colors'>{t("Login")}</span>
+        <span className='text-4xl font-bold border-b-[4px] border-black dark:border-white pb-3 transition-colors'>{t("Login").toUpperCase()}</span>
       </div>
       <div className='md:flex-1 center md:border-l md:py-8 md:px-4'>
         <div className='w-full max-w-[500px] gap-6 flex flex-col'>
@@ -45,7 +45,7 @@ export const Login = () => {
               {t("Login")}
             </button>
             <div className='flex flex-col gap-1 ml-3'>
-              <button className='font-semibold hover:opacity-70 active:scale-[0.98] hover:scale-[1.02] transition-transform'>
+              <button className='font-semibold hover:opacity-70 active:scale-[0.98] transition-transform'>
                 <span>{t("ForgetPassword")}</span>
               </button>
               <Link to='/register'>
