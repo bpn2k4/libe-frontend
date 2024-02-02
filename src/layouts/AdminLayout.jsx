@@ -6,10 +6,11 @@ export const AdminLayout = ({ children }) => {
 
   return (
     <Container>
-      <AdminHeader />
+
       <div className='w-full flex flex-row'>
         <NavBar />
         <div className='w-full'>
+          <AdminHeader />
           {children}
         </div>
       </div>

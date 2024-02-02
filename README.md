@@ -39,3 +39,8 @@ Note: Must be `http://127.0.0.1:5500` not `http://127.0.0.1:5500/index.html` for
 ## 4. Note
 - Every config, custom class, ... will set in `tailwind.config.js`
 
+<a
+  href="https://www.svgrepo.com/collection/software-mansion-line-icons/4">
+Icon Link
+</a>
+

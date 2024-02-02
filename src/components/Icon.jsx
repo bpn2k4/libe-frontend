@@ -67,3 +67,23 @@ export const IconCheck = ({ className }) => (
     <path d="M4 12.6111L8.92308 17.5L20 6.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 )
+export const IconHome = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
+    <path d="M3.99999 10L12 3L20 10L20 20H15V16C15 15.2044 14.6839 14.4413 14.1213 13.8787C13.5587 13.3161 12.7956 13 12 13C11.2043 13 10.4413 13.3161 9.87868 13.8787C9.31607 14.4413 9 15.2043 9 16V20H4L3.99999 10Z" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+export const IconBell = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
+    <path d="M9 17V18C9 18.394 9.0776 18.7841 9.22836 19.1481C9.37913 19.512 9.6001 19.8427 9.87868 20.1213C10.1573 20.3999 10.488 20.6209 10.8519 20.7716C11.2159 20.9224 11.606 21 12 21C12.394 21 12.7841 20.9224 13.1481 20.7716C13.512 20.6209 13.8427 20.3999 14.1213 20.1213C14.3999 19.8427 14.6209 19.512 14.7716 19.1481C14.9224 18.7841 15 18.394 15 18V17M18 9C18 12 20 17 20 17H4C4 17 6 13 6 9C6 5.732 8.732 3 12 3C15.268 3 18 5.732 18 9Z" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+export const IconTrashCan = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
+    <path d="M10 10V16M14 10V16M18 6V18C18 19.1046 17.1046 20 16 20H8C6.89543 20 6 19.1046 6 18V6M4 6H20M15 6V5C15 3.89543 14.1046 3 13 3H11C9.89543 3 9 3.89543 9 5V6" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+export const IconDownload = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
+    <path d="M20 15V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18L4 15M8 11L12 15M12 15L16 11M12 15V3" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
