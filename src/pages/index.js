@@ -1,3 +1,4 @@
+export { AdminDashboard } from './AdminDashboard'
 export { Collection } from './Collection'
 export { Home } from './Home'
 export { Login } from './Login'
