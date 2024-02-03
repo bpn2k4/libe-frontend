@@ -1,5 +1,5 @@
-import { useState } from "react"
-import { GridProduct, Select } from "~/components"
+import { useEffect, useState } from "react"
+import { GridProduct, Pagination, Select } from "~/components"
 
 import data from '../data'
 
@@ -12,9 +12,15 @@ export const Collection = () => {
     { value: '4', display: 'Docker' },
   ]
 
-  const [products, setProducts] = useState(data.products.slice(0, 10))
+  const [page, setPage] = useState(1)
+
+  const products = data.products.slice((page - 1) * 12, page * 12)
 
   const [value, setValue] = useState('')
+
+  useEffect(() => {
+
+  }, [])
 
   return (
     <div className='w-full min-h-screen'>
@@ -31,7 +37,17 @@ export const Collection = () => {
       </div>
       <div className='w-full px-2'>
         <GridProduct
-          products={products} />
+          products={products}
+          isLoading={false} />
+        <div className="w-full flex flex-col items-center mt-5">
+          <Pagination
+            page={page}
+            total={Math.ceil(data.products.length / 12)}
+            onChange={page => {
+              console.log(page);
+              setPage(page)
+            }} />
+        </div>
       </div>
     </div>
   )

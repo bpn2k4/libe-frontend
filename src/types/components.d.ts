@@ -61,6 +61,25 @@ export type CheckBox = (props: CheckBoxProps) => JSX.Element
 
 type GridProductProps = {
   className?: String,
-  products: Product[]
+  products?: Product[],
+  isLoading?: Boolean
 }
 export type GridProduct = (props: GridProductProps) => JSX.Element
+
+type DataTableProps = {
+  className?: String,
+  products: Product[]
+}
+export type DataTable = (props: DataTableProps) => JSX.Element
+
+type PaginationProps = {
+  className?: String,
+  cx?: {
+    wrapper: String,
+    item: String
+  },
+  total?: Number,
+  page?: Number,
+  onChange?: (page: Number) => void
+}
+export type Pagination = (props: PaginationProps) => JSX.Element

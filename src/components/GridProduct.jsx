@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge"
 import { IconImagePlaceHolder } from "./Icon"
 
 /**@type {import('~/types').GridProduct} */
-export const GridProduct = ({ className, products = [], isLoading }) => {
+export const GridProduct = ({ className, products = [], isLoading, number = 12 }) => {
 
   return (
     <div className={twMerge(
@@ -10,9 +10,9 @@ export const GridProduct = ({ className, products = [], isLoading }) => {
       className
     )}>
       {products.map((item, index) => (
-        <ItemProduct key={index} item={item} />
+        <ItemProduct key={Math.random()} item={item} />
       ))}
-      {isLoading && new Array(10).fill(0).map((_, index) => <Skeleton key={index} />)}
+      {isLoading && new Array(number).fill(0).map((_, index) => <Skeleton key={index} />)}
     </div>
   )
 }

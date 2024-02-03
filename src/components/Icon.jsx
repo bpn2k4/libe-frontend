@@ -87,3 +87,28 @@ export const IconDownload = ({ className }) => (
     <path d="M20 15V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18L4 15M8 11L12 15M12 15L16 11M12 15V3" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 )
+export const IconBag = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
+    <path d="M8 11.01V11M16 11.01V11M8 8V7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V8M8 8H6.84027C5.80009 8 4.93356 8.79732 4.84718 9.83391L4.18051 17.8339C4.08334 18.9999 5.00352 20 6.1736 20H17.8264C18.9965 20 19.9167 18.9999 19.8195 17.8339L19.1528 9.83391C19.0664 8.79732 18.1999 8 17.1597 8H16M8 8H16" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+export const IconMessage = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
+    <path d="M8 9.5H15M8 13.5H13M15.3 19.1L21 21L19.1 15.3C19.1 15.3 20 14 20 11.5C20 6.80558 16.1944 3 11.5 3C6.80558 3 3 6.80558 3 11.5C3 16.1944 6.80558 20 11.5 20C14.0847 20 15.3 19.1 15.3 19.1Z" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+export const IconList = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
+    <path d="M8 8H19M8 12H19M8 16H19M5 8V8.00999M5 12V12.01M5 16V16.01" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+export const IconCaretDouble = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
+    <path d="M7 13L12 18L17 13M7 6L12 11L17 6" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+export const IconCaretThick = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-[2.4] fill-none', className)} >
+    <path d="M6 9L12 15L18 9" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)

@@ -1,9 +1,9 @@
 
-export const AdminDashboard = () => {
+export const AdminCollection = () => {
 
   return (
     <div className="w-full h-[2000px]">
-      AdminDashboard sss
+      AdminCollection
     </div>
   )
 }

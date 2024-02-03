@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { twMerge } from "tailwind-merge"
 import { IconCaret } from "./Icon"
 import { CheckBox } from "./CheckBox"
@@ -7,6 +7,19 @@ import { CheckBox } from "./CheckBox"
 export const Select = ({ className, disable = false, options = [], ref, onSelect, cx, checkBox, value, label, closeAfterSelect = true }) => {
 
   const [show, setShow] = useState(false)
+
+  const menuRef = useRef(null)
+  const buttonRef = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!menuRef.current.contains(e.target) && !buttonRef.current.contains(e.target)) setShow(false)
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+
+  }, [menuRef])
+
   const _onSelect = onSelect ?? (_ => 1)
 
   return (
@@ -33,11 +46,13 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
         {label}
       </span>
       <span className={twMerge('', cx?.value)}>{value}</span>
-      <div className={twMerge(
-        'absolute z-[8] bg-main p-[2px] border border-main shadow rounded left-0 right-0 -bottom-1 translate-y-full transition-all duration-300 origin-top overflow-y-auto',
-        show ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0',
-        cx?.menu
-      )}>
+      <div
+        className={twMerge(
+          'absolute z-[8] bg-main p-[2px] border border-main shadow rounded left-0 right-0 -bottom-1 translate-y-full transition-all duration-300 origin-top overflow-y-auto',
+          show ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0',
+          cx?.menu
+        )}
+        ref={menuRef}>
         {options.map((item, index) => (
           <button
             key={index}
@@ -57,7 +72,10 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
           </button>
         ))}
       </div>
-      <button className='absolute offset-0' onClick={() => disable ? 1 : setShow(!show)} />
+      <button
+        className='absolute offset-0'
+        onClick={() => disable ? 1 : setShow(!show)}
+        ref={buttonRef} />
     </div>
   )
 }

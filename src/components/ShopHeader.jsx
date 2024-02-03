@@ -22,11 +22,11 @@ export const ShopHeader = () => {
         <ToggleTheme />
         <div className='h-11 flex flex-row items-center w-0 md:w-[128px] transition-all overflow-hidden gap-1 duration-500'>
           <button
-            className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 clickable text-main'
+            className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95 text-main'
             onClick={() => Util.searchRight.show()}>
             <IconSearch />
           </button>
-          <button className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 clickable text-main'
+          <button className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95 text-main'
             onClick={() => Util.cartRight.show()}>
             <IconCart />
           </button>
@@ -41,7 +41,7 @@ export const ShopHeader = () => {
 const ButtonUser = () => {
 
   return (
-    <Link className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 clickable text-main' to='/login'>
+    <Link className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95 text-main' to='/login'>
       <IconUser />
     </Link>
   )
@@ -50,20 +50,18 @@ const ButtonUser = () => {
 const GroupButtonMobile = () => {
 
   const { t } = useTranslation()
-  const menuRef = useRef(null);
+  const [show, setShow] = useState(false)
+  const menuRef = useRef(null)
   const buttonRef = useRef(null)
 
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (!menuRef.current.contains(e.target) && !buttonRef.current.contains(e.target)) setShow(false)
     }
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
 
-  }, [menuRef]);
-
-  const [show, setShow] = useState(false)
-
+  }, [menuRef])
 
   return (
     <div className='relative ml-1 md:ml-0'>
@@ -71,7 +69,7 @@ const GroupButtonMobile = () => {
         className={twMerge(
           'w-10 h-10 rounded-full center hover:bg-gray-80 hover:dark:bg-gray-750 text-main md:w-0 transition-all duration-500',
           show && 'bg-gray-80 dark:bg-gray-750',
-          !show && 'clickable'
+          !show && 'active:scale-95'
         )}
         onClick={() => setShow(!show)}
         ref={buttonRef}>

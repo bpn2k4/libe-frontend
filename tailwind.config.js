@@ -1,15 +1,16 @@
 /** @type {import('~/types').utilities} */
 const utilities = {
   '.bg-main': { '@apply bg-white dark:bg-black': 0 },
+  '.bg-main-reverse': { '@apply bg-black dark:bg-white': 0 },
   '.text-main': { '@apply text-black dark:text-white': 0 },
   '.text-main-reverse': { '@apply text-sm text-white dark:text-black': 0 },
   '.border-main': { '@apply border-base-200 dark:border-base-100': 0 },
   '.offset-0': { top: 0, left: 0, right: 0, bottom: 0 },
   '.center': { display: 'flex', alignItems: 'center', justifyContent: 'center' },
-  '.clickable': { '@apply hover:scale-105 active:scale-95': 0 },
+  '.clickable': { '@apply active:scale-95': 0 },
   '.pause-animation': { animationPlayState: 'paused' },
   '.run-animation': { animationPlayState: 'running' },
-  '.skeleton': { "@apply overflow-hidden bg-base-219 dark:bg-base-54 animate-pulse after:content-[''] after:absolute after:h-full after:w-40 after:bg-gradient-to-r after:from-base-221 after:via-base-232 after:to-base-221 after:left-0 after:animate-left-to-right dark:after:from-base-55 dark:after:via-base-83 dark:after:to-base-55": 0 },
+  '.skeleton': { "@apply overflow-hidden bg-base-219 dark:bg-base-54 animate-pulse after:content-[''] after:absolute after:h-full after:w-40 after:-skew-x-6 after:bg-gradient-to-r after:from-base-219 after:via-base-232 after:to-base-221 after:left-0 after:animate-left-to-right dark:after:from-base-55 dark:after:via-base-83 dark:after:to-base-55": 0 },
   '.no-scrollbar': {},
 }
 /** @type {import('tailwindcss').Config} */
@@ -73,8 +74,8 @@ export default {
           '100%': { transform: 'scaleX(0)' },
         },
         'left-to-right': {
-          '0%': { left: '0%' },
-          '100%': { left: '100%' },
+          '0%': { left: '-50%' },
+          '100%': { left: '150%' },
         }
       }
     },

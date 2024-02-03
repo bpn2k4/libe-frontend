@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AdminLayout, ShopLayout } from '~/layouts'
-import { AdminDashboard, Collection, Home, Login, Product, Register, Search, Test } from '~/pages'
+import { AdminCollection, AdminDashboard, Collection, Home, Login, Product, Register, Search, Test } from '~/pages'
 
 const routes = [
   {
@@ -56,6 +56,14 @@ const routes = [
     element: (
       <AdminLayout>
         <AdminDashboard />
+      </AdminLayout>
+    )
+  },
+  {
+    path: '/admin/collection',
+    element: (
+      <AdminLayout>
+        <AdminCollection />
       </AdminLayout>
     )
   },

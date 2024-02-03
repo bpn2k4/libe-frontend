@@ -34,7 +34,7 @@ export const CartRight = () => {
         )}>
           <div className='flex justify-end'>
             <button
-              className='w-10 h-10 rounded-full hover:bg-gray-80 hover:dark:bg-gray-750 center clickable'
+              className='w-10 h-10 rounded-full hover:bg-gray-80 hover:dark:bg-gray-750 center active:scale-95'
               onClick={() => setShow(false)}>
               <IconCancel />
             </button>
