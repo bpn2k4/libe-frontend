@@ -5,7 +5,12 @@ import { IconCheck } from "./Icon"
 /**@type {import('~/types').CheckBox} */
 export const CheckBox = ({ className, label, cx, disable, checked, onClick }) => {
 
-  const _onClick = disable ? (() => 1) : onClick
+  const [check_, setCheck_] = useState(false)
+
+  const _check = typeof (checked) == "undefined" ? check_ : checked
+  const _onChange = typeof (onClick) == "undefined" ? (() => setCheck_(!check_)) : onClick
+
+  const _onClick = disable ? (() => 1) : _onChange
 
   return (
     <div className={twMerge(
@@ -18,8 +23,8 @@ export const CheckBox = ({ className, label, cx, disable, checked, onClick }) =>
         cx?.check
       )} onClick={_onClick}>
         <div className={twMerge(
-          'absolute offset-0 center transition duration-300',
-          checked ? 'scale-100' : 'scale-0'
+          'absolute offset-0 center transition',
+          _check ? 'scale-100' : 'scale-0'
         )}>
           <IconCheck className='w-5 h-5' />
         </div>

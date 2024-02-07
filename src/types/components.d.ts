@@ -55,7 +55,8 @@ type CheckBoxProps = {
   },
   disable: Boolean,
   checked: Boolean,
-  label: String
+  label: String,
+  onClick: Function
 }
 export type CheckBox = (props: CheckBoxProps) => JSX.Element
 
@@ -66,11 +67,14 @@ type GridProductProps = {
 }
 export type GridProduct = (props: GridProductProps) => JSX.Element
 
-type DataTableProps = {
+type TableProps = {
   className?: String,
-  products: Product[]
+  cx?: {
+    wrapper: String,
+    table: String
+  }
 }
-export type DataTable = (props: DataTableProps) => JSX.Element
+export type Table = (props: TableProps) => JSX.Element
 
 type PaginationProps = {
   className?: String,

@@ -40,7 +40,7 @@ export const NavBar = () => {
   ]
 
   return (
-    <div className='w-0 md:w-60 transition-all relative border-r border-main h-svh'>
+    <div className='w-0 md:!w-60 transition-all relative border-r border-main h-svh'>
       <nav className='w-full px-1 flex flex-col h-full'>
         <Link className="w-full py-3 center gap-2">
           <img

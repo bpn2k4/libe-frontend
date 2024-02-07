@@ -2,7 +2,10 @@
 export const Test = () => {
 
   return (
-    <main className='w-full h-screen'>
+    <main
+      className='w-full h-screen'
+      style={{}}
+    >
 
     </main>
   )

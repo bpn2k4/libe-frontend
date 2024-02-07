@@ -13,6 +13,15 @@ export type AxiosError = {
 
 }
 
+type Users = {
+  id: Number,
+  name: String,
+  age: Number,
+  gender: String,
+  email: String,
+  address: String,
+}
 export type data = {
-  products: Product[]
+  products: Product[],
+  users: Users[]
 }
