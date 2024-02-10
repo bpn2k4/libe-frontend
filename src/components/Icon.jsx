@@ -108,7 +108,12 @@ export const IconCaretDouble = ({ className }) => (
   </svg>
 )
 export const IconCaretThick = ({ className }) => (
-  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-[2.4] fill-none', className)} >
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
     <path d="M6 9L12 15L18 9" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
+export const IconPlus = ({ className }) => (
+  <svg viewBox='0 0 24 24' className={twMerge('w-6 h-6 stroke-current stroke-2 fill-none', className)} >
+    <path d="M4 12H20M12 4V20" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 )

@@ -3,7 +3,7 @@ export * from './apis'
 export * from './hooks'
 
 import { CSSProperties } from 'react'
-import { Product } from './object'
+import { Product, Collection } from './object'
 
 export type utilities = {
   [key: string]: CSSProperties
@@ -23,5 +23,6 @@ type Users = {
 }
 export type data = {
   products: Product[],
-  users: Users[]
+  users: Users[],
+  collections: Collection[]
 }

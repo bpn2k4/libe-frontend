@@ -12,6 +12,7 @@ const utilities = {
   '.pause-animation': { animationPlayState: 'paused' },
   '.run-animation': { animationPlayState: 'running' },
   '.skeleton': { "@apply overflow-hidden bg-base-219 dark:bg-base-54 animate-pulse after:content-[''] after:absolute after:h-full after:w-40 after:-skew-x-6 after:bg-gradient-to-r after:from-base-219 after:via-base-232 after:to-base-221 after:left-0 after:animate-left-to-right dark:after:from-base-55 dark:after:via-base-83 dark:after:to-base-55": 0 },
+  '.shadow-main': { '@apply shadow-[0_0_3px_3px_rgba(0,0,0,0.3)] shadow-black/10 dark:shadow-white/30': 0 },
   '.no-scrollbar': {},
 }
 /** @type {import('tailwindcss').Config} */
@@ -94,7 +95,7 @@ export default {
           '0%': { left: '-50%' },
           '100%': { left: '150%' },
         }
-      }
+      },
     },
   },
   plugins: [

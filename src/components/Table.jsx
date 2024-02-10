@@ -1,16 +1,18 @@
 import { twMerge } from 'tailwind-merge'
+import { Pagination } from './Pagination'
+import { Select } from './Select'
 
 /**@type {import('~/types').Table} */
 export const Table = ({ className, children, cx }) => {
 
   return (
     <div className={twMerge(
-      'w-full overflow-x-auto',
+      'w-full overflow-x-auto ',
       className,
       cx?.wrapper
     )}>
       <table className={twMerge(
-        'table border-collapse w-full table-auto min-w-[800px] mb-5',
+        'table border-collapse w-full table-auto min-w-[800px] mb-2 relative',
         cx?.table
       )}>
         {children}
@@ -59,5 +61,21 @@ export const TableCell = ({ th = false, className, children }) => {
         </td>
       )
 
+  )
+}
+
+export const TablePagination = ({ className, total, page, onChangePage, number, onChangeNumber }) => {
+
+  return (
+    <div className={twMerge('flex flex-row justify-between', className)}>
+      <Pagination
+        cx={{ item: 'w-8 h-8', wrapper: 'gap-1' }}
+        total={total}
+        page={page}
+        onChange={onChangePage} />
+      <Select
+        cx={{ wrapper: 'h-8' }}
+        value="Hiển thị 15 sản phẩm" />
+    </div>
   )
 }

@@ -1122,5 +1122,167 @@
       "email": "stephanie.nguyen@example.com",
       "address": "555 Oak Street, Now, USA"
     }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "name": "Bow Ribbon Pink Lace Trimming Silk Midi Skirt",
+      "description": "A beautiful sample collection",
+      "totalProduct": 15,
+      "color": "ee6634",
+      "createdAt": "2024-01-21T02:26:56"
+    },
+    {
+      "id": 2,
+      "name": "Vintage Floral Print Wrap Dress",
+      "description": "Elegant dress with a vintage touch",
+      "totalProduct": 20,
+      "color": "8b4513",
+      "createdAt": "2023-12-10T08:15:32"
+    },
+    {
+      "id": 3,
+      "name": "Classic Striped Button-Up Shirt",
+      "description": "Timeless piece for any wardrobe",
+      "totalProduct": 25,
+      "color": "1e90ff",
+      "createdAt": "2024-01-05T14:42:20"
+    },
+    {
+      "id": 4,
+      "name": "Denim Jacket with Embroidered Back",
+      "description": "Casual yet stylish denim jacket",
+      "totalProduct": 18,
+      "color": "4682b4",
+      "createdAt": "2024-01-15T20:03:10"
+    },
+    {
+      "id": 5,
+      "name": "Embellished Maxi Dress",
+      "description": "Perfect for special occasions",
+      "totalProduct": 12,
+      "color": "ff69b4",
+      "createdAt": "2023-11-29T11:55:47"
+    },
+    {
+      "id": 6,
+      "name": "Cozy Knit Sweater",
+      "description": "Stay warm and stylish in this cozy knit",
+      "totalProduct": 30,
+      "color": "2e8b57",
+      "createdAt": "2024-01-28T17:30:05"
+    },
+    {
+      "id": 7,
+      "name": "Leather Crossbody Bag",
+      "description": "Compact and chic accessory",
+      "totalProduct": 22,
+      "color": "a0522d",
+      "createdAt": "2023-12-03T09:40:18"
+    },
+    {
+      "id": 8,
+      "name": "Tropical Print Bikini Set",
+      "description": "Get ready for the beach with this fun bikini set",
+      "totalProduct": 35,
+      "color": "ff4500",
+      "createdAt": "2024-01-17T05:20:55"
+    },
+    {
+      "id": 9,
+      "name": "Striped Linen Shorts",
+      "description": "Lightweight and breezy shorts for summer",
+      "totalProduct": 28,
+      "color": "f0e68c",
+      "createdAt": "2023-12-22T13:18:40"
+    },
+    {
+      "id": 10,
+      "name": "Embroidered Boho Blouse",
+      "description": "Bohemian-inspired blouse with intricate embroidery",
+      "totalProduct": 17,
+      "color": "800080",
+      "createdAt": "2024-01-10T22:05:33"
+    },
+    {
+      "id": 11,
+      "name": "Ruffled Off-Shoulder Top",
+      "description": "Flirty and feminine top with ruffled details",
+      "totalProduct": 23,
+      "color": "ff8c00",
+      "createdAt": "2023-11-15T18:37:22"
+    },
+    {
+      "id": 12,
+      "name": "Tailored Slim-Fit Trousers",
+      "description": "Sharp and sophisticated trousers for any occasion",
+      "totalProduct": 19,
+      "color": "008080",
+      "createdAt": "2024-01-03T07:10:12"
+    },
+    {
+      "id": 13,
+      "name": "Chunky Cable Knit Scarf",
+      "description": "Stay cozy and stylish with this chunky knit scarf",
+      "totalProduct": 26,
+      "color": "d2b48c",
+      "createdAt": "2023-12-18T16:55:30"
+    },
+    {
+      "id": 14,
+      "name": "Floral Embroidered Denim Shorts",
+      "description": "Casual denim shorts with delicate floral embroidery",
+      "totalProduct": 14,
+      "color": "ff6347",
+      "createdAt": "2024-01-23T11:28:45"
+    },
+    {
+      "id": 15,
+      "name": "Bohemian Maxi Skirt",
+      "description": "Flowy and feminine maxi skirt with bohemian flair",
+      "totalProduct": 21,
+      "color": "6a5acd",
+      "createdAt": "2023-11-20T21:45:55"
+    },
+    {
+      "id": 16,
+      "name": "Linen Button-Up Shirt Dress",
+      "description": "Effortlessly chic dress with linen fabric",
+      "totalProduct": 16,
+      "color": "32cd32",
+      "createdAt": "2024-01-08T14:02:04"
+    },
+    {
+      "id": 17,
+      "name": "Colorblock Sweater Dress",
+      "description": "Bold and stylish sweater dress with colorblock design",
+      "totalProduct": 24,
+      "color": "800000",
+      "createdAt": "2023-12-27T19:20:39"
+    },
+    {
+      "id": 18,
+      "name": "Polka Dot Wrap Top",
+      "description": "Playful and versatile wrap top with polka dot print",
+      "totalProduct": 18,
+      "color": "ff1493",
+      "createdAt": "2024-01-13T09:48:16"
+    },
+    {
+      "id": 19,
+      "name": "Cropped Cargo Pants",
+      "description": "Edgy and practical cargo pants with a cropped length",
+      "totalProduct": 29,
+      "color": "708090",
+      "createdAt": "2023-11-25T07:35:08"
+    },
+    {
+      "id": 20,
+      "name": "Embroidered Peasant Blouse",
+      "description": "Flowy and bohemian blouse with embroidered details",
+      "totalProduct": 13,
+      "color": "daa520",
+      "createdAt": "2024-01-19T16:15:27"
+    }
   ]
 }

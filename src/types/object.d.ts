@@ -17,3 +17,12 @@ export type Product = {
   price: Number,
   images: String[]
 }
+
+export type Collection = {
+  collectionId: Number,
+  name: String,
+  color: String,
+  description: String,
+  totalProduct: String,
+  createdAt: String
+}
