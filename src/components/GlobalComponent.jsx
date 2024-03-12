@@ -3,6 +3,7 @@ import { MenuLeft } from './MenuLeft'
 import { Splash } from './Splash'
 import { CartRight } from './CartRight'
 import { SearchRight } from './SearchRight'
+import { ModalConfirm } from './ModalConfirm'
 
 export const GlobalComponent = () => {
   return (
@@ -11,6 +12,7 @@ export const GlobalComponent = () => {
       <MenuLeft />
       <CartRight />
       <SearchRight />
+      <ModalConfirm />
       {/* <Toast /> */}
     </>
   )

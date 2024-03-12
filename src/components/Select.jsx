@@ -27,7 +27,7 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
       className={twMerge(
         'w-40 h-10 rounded border border-main flex flex-row items-center px-2 relative transition-all ring-0',
         disable && 'cursor-default opacity-70',
-        show && 'ring-1 ring-base-115 dark:ring-base-115 border-base-115 dark:border-base-115',
+        show && 'ring-[0.5px] ring-base-115 dark:ring-base-115 border-base-115 dark:border-base-115',
         className,
         cx?.wrapper
       )}>

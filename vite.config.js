@@ -1,8 +1,17 @@
 import { defineConfig } from 'vite'
 import path from 'path';
 import react from '@vitejs/plugin-react-swc'
+import fs from 'fs'
 
 export default defineConfig({
+  server: {
+    port: 443,
+    host: "localhost.com",
+    https: {
+      key: fs.readFileSync('./cert/localhost.com.key'),
+      cert: fs.readFileSync('./cert/localhost.com.crt'),
+    },
+  },
   plugins: [react()],
   resolve: {
     alias: {

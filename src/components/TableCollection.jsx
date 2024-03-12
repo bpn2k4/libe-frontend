@@ -6,6 +6,7 @@ import { CheckBox } from './CheckBox'
 import data from "../data"
 import { Select } from "./Select"
 import { IconPlus } from "./Icon"
+import Util from "~/utils"
 
 const formatDate = (dateString) => {
   var date = new Date(dateString)
@@ -30,7 +31,9 @@ export const TableCollection = ({ className }) => {
             value={""}
             cx={{ wrapper: "h-9" }}
             label={"Sort by"} />
-          <button className="h-9 px-3 rounded border border-main center active:scale-95 transition-transform">
+          <button
+            className="h-9 px-3 rounded border border-main center active:scale-95 transition-transform"
+            onClick={() => Util.modalConfirm.show()}>
             <IconPlus className='w-4 h-4 mr-2' />
             Add Collection
           </button>
