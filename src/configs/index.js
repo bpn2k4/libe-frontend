@@ -19,3 +19,9 @@ export const STATUS_CODE = {
   CONFLICT: 409,
   LOCKED: 423
 }
+
+export const ACTION_TYPE = {
+  EDIT: "EDIT",
+  CREATE: "CREATE",
+  VIEW: "VIEW"
+}

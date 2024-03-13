@@ -9,8 +9,8 @@ export const Modal = ({ className, show, children, onClickOutsize }) => {
 
   useLayoutEffect(() => {
     if (show) {
-      document.body.style.overflow = show ? 'hidden' : 'unset'
-      document.body.style.paddingRight = show ? '6px' : 'unset'
+      // document.body.style.overflow = show ? 'hidden' : 'unset'
+      // document.body.style.paddingRight = show ? '6px' : 'unset'
     }
   }, [show])
 

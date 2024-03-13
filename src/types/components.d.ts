@@ -87,3 +87,27 @@ type PaginationProps = {
   onChange?: (page: Number) => void
 }
 export type Pagination = (props: PaginationProps) => JSX.Element
+
+type GroupButtonModalProps = {
+  className?: String,
+  cx?: {
+    wrapper: String,
+    buttonLeft: String,
+    buttonRight: String
+  },
+  buttonLeft: {
+    className: String,
+    onClick: Function,
+    text: String,
+    disable: Boolean,
+    isLoading: Boolean
+  },
+  buttonRight: {
+    className: String,
+    onClick: Function,
+    text: String,
+    disable: Boolean,
+    isLoading: Boolean
+  },
+}
+export type GroupButtonModal = (props: GroupButtonModalProps) => JSX.Element

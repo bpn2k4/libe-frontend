@@ -2,7 +2,7 @@ import { useId } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 /**@type {import('~/types').TextField} */
-export const TextField = ({
+export const AreaField = ({
   className,
   cx,
   required,
@@ -20,9 +20,9 @@ export const TextField = ({
 
   return (
     <div className={twMerge('w-full text-sm relative group', className)}>
-      <input
+      <textarea
         className={twMerge(
-          'outline-none w-full h-10 border pl-2 border-base-219 dark:border-base-54 rounded bg-transparent transition-all hover:border-base-115 dark:hover:border-base-115 hover:ring-[0.5px] hover:ring-base-115 dark:hover:ring-base-115',
+          'outline-none resize-none w-full border pl-2 border-base-219 dark:border-base-54 rounded bg-transparent transition-all hover:border-base-115 dark:hover:border-base-115 hover:ring-[0.5px] hover:ring-base-115 dark:hover:ring-base-115 min-h-24 pt-[10px] pb-3 scroll-p-10',
           'focus-within:border-base-115 dark:focus-within:border-base-115 focus-within:ring-[0.5px] focus-within:ring-base-115 dark:focus-within:ring-base-115',
           error && 'border-red-500 dark:border-red-500',
           cx?.input
@@ -36,10 +36,10 @@ export const TextField = ({
         <label
           htmlFor={id}
           className={twMerge(
-            'absolute cursor-text top-1/2 -translate-y-1/2 left-2 transition-all bg-main px-1 opacity-75 duration-300',
-            'group-focus-within:top-0 group-focus-within:opacity-100 group-focus-within:text-xs group-focus-within:font-semibold',
+            'absolute cursor-text top-[10px] left-2 transition-all bg-main px-1 opacity-75 duration-300',
+            'group-focus-within:-top-2 group-focus-within:opacity-100 group-focus-within:text-xs group-focus-within:font-semibold',
             required && "after:content-['*'] after:ml-0.5 after:text-red-500",
-            value && 'top-0 opacity-100 text-xs font-semibold',
+            value && '-top-2 opacity-100 text-xs font-semibold',
             cx?.label
           )}>
           {label}

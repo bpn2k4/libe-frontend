@@ -33,7 +33,7 @@ export const TableCollection = ({ className }) => {
             label={"Sort by"} />
           <button
             className="h-9 px-3 rounded border border-main center active:scale-95 transition-transform"
-            onClick={() => Util.modalConfirm.show()}>
+            onClick={() => Util.modalCollection.show()}>
             <IconPlus className='w-4 h-4 mr-2' />
             Add Collection
           </button>

@@ -4,6 +4,7 @@ import { Splash } from './Splash'
 import { CartRight } from './CartRight'
 import { SearchRight } from './SearchRight'
 import { ModalConfirm } from './ModalConfirm'
+import { ModalCollection } from './ModalColection'
 
 export const GlobalComponent = () => {
   return (
@@ -13,6 +14,7 @@ export const GlobalComponent = () => {
       <CartRight />
       <SearchRight />
       <ModalConfirm />
+      <ModalCollection />
       {/* <Toast /> */}
     </>
   )

@@ -13,7 +13,7 @@ const defaultConfig = {
 
 export const ModalConfirm = () => {
 
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
   const [config, setConfig] = useState({ ...defaultConfig })
 
   Util.modalConfirm = {
