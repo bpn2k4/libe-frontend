@@ -32,7 +32,7 @@ export const TableCollection = ({ className }) => {
             cx={{ wrapper: "h-9" }}
             label={"Sort by"} />
           <button
-            className="h-9 px-3 rounded border border-main center active:scale-95 transition-transform"
+            className="h-9 px-3 rounded border border-main center active:scale-98 transition-transform"
             onClick={() => Util.modalCollection.show()}>
             <IconPlus className='w-4 h-4 mr-2' />
             Add Collection

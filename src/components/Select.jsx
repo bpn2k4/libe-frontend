@@ -39,8 +39,8 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
       </span>
       <span className={twMerge(
         'absolute top-1/2 left-1 -translate-y-1/2 px-1 bg-main transition-all duration-300 text-main text-sm',
-        value && 'top-0 text-xs',
-        show && 'top-0 text-xs',
+        value && 'top-0 text-xs font-semibold',
+        show && 'top-0 text-xs font-semibold',
         cx?.label
       )}>
         {label}
@@ -49,6 +49,7 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
       <div
         className={twMerge(
           'absolute z-[8] bg-main p-[2px] border border-main shadow rounded left-0 right-0 -bottom-1 translate-y-full transition-all duration-300 origin-top overflow-y-auto',
+          options.length > 0 && "p-[2px]",
           show ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0',
           cx?.menu
         )}

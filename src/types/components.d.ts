@@ -16,7 +16,8 @@ type TextFieldProps = {
   maxLength?: Number,
   type: 'text' | 'password' | 'number',
   helperText?: String,
-  error: Boolean
+  error: Boolean,
+  showLength: Boolean
 }
 export type TextField = (props: TextFieldProps) => JSX.Element
 
@@ -111,3 +112,12 @@ type GroupButtonModalProps = {
   },
 }
 export type GroupButtonModal = (props: GroupButtonModalProps) => JSX.Element
+
+export type ButtonLeft = {
+  text: String,
+  isLoading: Boolean,
+  onClick: Function,
+  className: String
+}
+
+export type ButtonRight = ButtonLeft

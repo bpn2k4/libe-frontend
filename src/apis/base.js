@@ -1,10 +1,12 @@
 import axios from 'axios'
+import queryString from 'query-string';
 
 import { API_BASE_URL, STATUS_CODE } from '~/configs'
 import Util from '~/utils';
 
 const base = axios.create({
   baseURL: `${API_BASE_URL}/api/v1`,
+  paramsSerializer: params => queryString.parse(params),
   headers: {
     "Content-Type": "application/json",
   },

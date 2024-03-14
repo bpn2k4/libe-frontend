@@ -22,6 +22,7 @@ const Util = {
     hide: () => 1
   },
 
+  /**@type {import("~/types").ModalCollection} */
   modalCollection: {
     isShow: false,
     show: () => 1,

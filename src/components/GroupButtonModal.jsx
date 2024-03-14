@@ -14,7 +14,7 @@ export const GroupButtonModal = ({ className, cx, buttonLeft, buttonRight }) => 
       <button
         className={twMerge(
           "h-10 flex-1 center border border-main rounded text-sm font-semibold transition-all",
-          buttonRight?.disable ? "cursor-default" : "clickable active:opacity-70 hover:opacity-80",
+          buttonRight?.disable ? "cursor-default" : "active:scale-99 active:opacity-80 hover:opacity-80",
           cx?.buttonRight,
           buttonRight?.className)}
         onClick={buttonRight?.disable ? _onClick : buttonRight?.onClick}>

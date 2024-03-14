@@ -21,7 +21,7 @@ export const STATUS_CODE = {
 }
 
 export const ACTION_TYPE = {
-  EDIT: "EDIT",
+  UPDATE: "UPDATE",
   CREATE: "CREATE",
   VIEW: "VIEW"
 }

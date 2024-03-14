@@ -1,6 +1,7 @@
 export * from './components'
 export * from './apis'
 export * from './hooks'
+export * from './utils'
 
 import { CSSProperties } from 'react'
 import { Product, Collection } from './object'

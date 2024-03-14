@@ -24,6 +24,13 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        "2.5": "0.625rem"
+      },
+      scale: {
+        "98": "0.98",
+        "99": "0.99"
+      },
       colors: {
         gray: {
           80: "rgb(242, 242, 242)",

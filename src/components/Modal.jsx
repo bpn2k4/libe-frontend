@@ -20,7 +20,7 @@ export const Modal = ({ className, show, children, onClickOutsize }) => {
   return _show ? (
     <div
       className={twMerge(
-        "z-[99] fixed offset-0 bg-black/50 center transition-all duration-300 origin-top",
+        "z-[99] text-sm fixed offset-0 bg-black/50 center transition-all duration-300 origin-top",
         __show ? "opacity-100" : "opacity-0",
         className
       )}>
