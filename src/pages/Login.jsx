@@ -40,12 +40,12 @@ export const Login = () => {
             onChange={e => setPassword(e.target.value)} />
           <div className='flex flex-row gap-2 items-center'>
             <button
-              className='border border-gray-450 rounded h-12 w-40 text-sm font-semibold active:scale-95 transition-all hover:opacity-80'
+              className='border border-gray-450 rounded h-12 w-40 text-sm font-semibold active:scale-99 transition-all hover:opacity-80'
               onClick={handleLogin}>
               {t("Login")}
             </button>
             <div className='flex flex-col gap-1 ml-3'>
-              <button className='font-semibold hover:opacity-70 active:scale-[0.98] transition-transform'>
+              <button className='font-semibold hover:opacity-70 active:scale-98 transition-transform'>
                 <span>{t("ForgetPassword")}</span>
               </button>
               <Link to='/register'>

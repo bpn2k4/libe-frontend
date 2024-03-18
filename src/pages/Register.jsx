@@ -129,7 +129,7 @@ export const Register = () => {
             onChange={onChangeEmail} />
           <div className='flex flex-row gap-2 items-center'>
             <button
-              className='border border-gray-450 rounded h-12 w-40 text-sm font-semibold active:scale-95 transition-all hover:opacity-80'
+              className='border border-gray-450 rounded h-12 w-40 text-sm font-semibold active:scale-99 transition-all hover:opacity-80'
               onClick={handleRegister}>
               {t("Register")}
             </button>

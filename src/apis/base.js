@@ -42,11 +42,3 @@ base.interceptors.response.use(
 )
 
 export default base
-
-// const baseURL = `${API_BASE_URL}/api/v1`
-
-// const base = {
-//   post: () => {
-
-//   }
-// }
