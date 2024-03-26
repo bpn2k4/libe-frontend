@@ -22,11 +22,11 @@ export const ShopHeader = () => {
         <ToggleTheme />
         <div className='h-11 flex flex-row items-center w-0 md:w-[128px] transition-all overflow-hidden gap-1 duration-500'>
           <button
-            className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95 text-main'
+            className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95 text-primary'
             onClick={() => Util.searchRight.show()}>
             <IconSearch />
           </button>
-          <button className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95 text-main'
+          <button className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95 text-primary'
             onClick={() => Util.cartRight.show()}>
             <IconCart />
           </button>
@@ -41,7 +41,7 @@ export const ShopHeader = () => {
 const ButtonUser = () => {
 
   return (
-    <Link className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95 text-main' to='/login'>
+    <Link className='w-10 h-10 rounded-full center transition-all hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95 text-primary' to='/login'>
       <IconUser />
     </Link>
   )
@@ -67,7 +67,7 @@ const GroupButtonMobile = () => {
     <div className='relative ml-1 md:ml-0'>
       <button
         className={twMerge(
-          'w-10 h-10 rounded-full center hover:bg-gray-80 hover:dark:bg-gray-750 text-main md:w-0 transition-all duration-500',
+          'w-10 h-10 rounded-full center hover:bg-gray-80 hover:dark:bg-gray-750 text-primary md:w-0 transition-all duration-500',
           show && 'bg-gray-80 dark:bg-gray-750',
           !show && 'active:scale-95'
         )}
@@ -77,7 +77,7 @@ const GroupButtonMobile = () => {
       </button>
       <div
         className={twMerge(
-          'absolute z-[10] top-11 -right-1 p-1 w-40 flex flex-col bg-main shadow rounded border border-main transition origin-top-right duration-',
+          'absolute z-[10] top-11 -right-1 p-1 w-40 flex flex-col bg-primary shadow rounded border border-primary transition origin-top-right duration-',
           show ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
         )}
         ref={menuRef}>

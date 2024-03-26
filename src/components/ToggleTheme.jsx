@@ -20,7 +20,7 @@ export const ToggleTheme = ({ className }) => {
   return (
     <button
       className={twMerge(
-        'w-10 h-10 rounded-full relative overflow-hidden transition-all bg-main',
+        'w-10 h-10 rounded-full relative overflow-hidden transition-all bg-primary',
         'hover:bg-gray-80 hover:dark:bg-gray-750 active:scale-95',
         className
       )}

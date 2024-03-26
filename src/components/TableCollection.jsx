@@ -23,7 +23,7 @@ export const TableCollection = ({ className }) => {
   const [collections, setCollections] = useState(data.collections.slice(0, 10))
 
   return (
-    <div className={twMerge('w-full rounded-md shadow-main', className)}>
+    <div className={twMerge('w-full rounded-md', className)}>
       <div className="flex flex-col md:flex-row md:justify-between px-2 py-2">
         <h1 className="font-semibold text-xl">Collection</h1>
         <div className="flex flex-row gap-1">
@@ -32,7 +32,7 @@ export const TableCollection = ({ className }) => {
             cx={{ wrapper: "h-9" }}
             label={"Sort by"} />
           <button
-            className="h-9 px-3 rounded border border-main center active:scale-98 transition-transform"
+            className="h-9 px-3 rounded border border-primary center active:scale-98 transition-transform"
             onClick={() => Util.modalCollection.show()}>
             <IconPlus className='w-4 h-4 mr-2' />
             Add Collection

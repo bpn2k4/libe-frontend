@@ -12,7 +12,7 @@ export const AdminLayout = ({ children }) => {
           <NavBar />
         </div>
         <div className='flex-1 relative'>
-          <div className='w-full z-[4] absolute bg-main'>
+          <div className='w-full z-[4] absolute bg-primary'>
             <AdminHeader />
           </div>
           <div className='absolute top-12 left-0 bottom-0 right-0 overflow-y-auto overflow-x-hidden'>

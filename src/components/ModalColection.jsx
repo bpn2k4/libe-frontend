@@ -16,7 +16,7 @@ const defaultConfig = {
 
 export const ModalCollection = () => {
 
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
   const [config, setConfig] = useState({ ...defaultConfig })
 
   Util.modalCollection = {
@@ -40,7 +40,7 @@ export const ModalCollection = () => {
     <Modal
       show={show}
       onClickOutsize={() => setShow(false)}>
-      <div className="z-[2] w-full max-w-[500px] min-h-[200px] max-h-[calc(100vh-40px)] overflow-hidden flex flex-col bg-main text-main relative p-1 rounded-md">
+      <div className="z-[2] w-full max-w-[500px] min-h-[200px] max-h-[calc(100vh-40px)] overflow-hidden flex flex-col bg-modal text-primary relative p-1 rounded-md">
         <ButtonCancelCircle
           className="absolute top-2 right-2"
           onClick={() => setShow(!show)} />
@@ -58,9 +58,9 @@ export const ModalCollection = () => {
             label={"Collection description"}
             value={des}
             onChange={e => setDes(e.target.value)} />
-          <div className="flex flex-row mt-3 items-center">
+          <div className="flex flex-row mt-3">
             <span>Color:</span>
-            <label htmlFor={id} className="h-9 w-16 ml-2 border border-main rounded cursor-pointer" style={{ backgroundColor: color }}></label>
+            <label htmlFor={id} className="h-10 w-20 ml-2 border border-main rounded cursor-pointer" style={{ backgroundColor: color }}></label>
             <input
               id={id}
               type="color"

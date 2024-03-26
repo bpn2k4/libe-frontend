@@ -36,7 +36,7 @@ export const AreaField = ({
         <label
           htmlFor={id}
           className={twMerge(
-            'absolute cursor-text top-2.5 left-2 transition-all bg-main px-1 opacity-75 duration-300',
+            'absolute cursor-text top-2.5 left-2 transition-all bg-primary px-1 opacity-75 duration-300',
             'group-focus-within:-top-2 group-focus-within:opacity-100 group-focus-within:text-xs group-focus-within:font-semibold',
             required && "after:content-['*'] after:ml-0.5 after:text-red-500",
             value && '-top-2 opacity-100 text-xs font-semibold',

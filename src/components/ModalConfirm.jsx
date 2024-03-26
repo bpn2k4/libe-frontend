@@ -28,7 +28,7 @@ export const ModalConfirm = () => {
 
   return (
     <Modal show={show} onClickOutsize={() => setShow(false)}>
-      <div className="flex flex-col w-full max-w-sm bg-main text-main rounded-md z-[2] relative p-1">
+      <div className="flex flex-col w-full max-w-sm bg-primary text-primary rounded-md z-[2] relative p-1">
         <ButtonCancelCircle
           className="absolute top-2 right-2"
           onClick={() => setShow(!show)} />
@@ -37,8 +37,8 @@ export const ModalConfirm = () => {
           <span className="mt-1">{config.message}</span>
         </div>
         <div className="w-full flex flex-row gap-1 text-sm font-semibold">
-          <button className="w-full h-10 border rounded border-main">OK</button>
-          <button className="w-full h-10 border rounded border-main">Cancel</button>
+          <button className="w-full h-10 border rounded border-primary">OK</button>
+          <button className="w-full h-10 border rounded border-primary">Cancel</button>
         </div>
       </div>
     </Modal>

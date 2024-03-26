@@ -22,10 +22,10 @@ export const CartRight = () => {
   }, [show])
 
   return (
-    <div className='MenuLeft text-main font-semibold'>
+    <div className='MenuLeft text-primary font-semibold'>
       {show && <div className='fixed z-[10] offset-0 bg-black/50' onClick={() => setShow(false)} />}
       <div className={twMerge(
-        'fixed z-[11] text-base top-0 right-0 bottom-0 w-full md:max-w-[400px] bg-main origin-right transition-transform duration-300',
+        'fixed z-[11] text-primary top-0 right-0 bottom-0 w-full md:max-w-[400px] bg-primary origin-right transition-transform duration-300',
         show ? 'scale-x-100' : 'scale-x-0'
       )}>
         <div className={twMerge(

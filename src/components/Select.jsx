@@ -25,7 +25,7 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
   return (
     <div
       className={twMerge(
-        'w-40 h-10 rounded border border-main flex flex-row items-center px-2 relative transition-all ring-0',
+        'w-40 h-10 rounded border border-primary flex flex-row items-center px-2 relative transition-all ring-0',
         disable && 'cursor-default opacity-70',
         show && 'ring-[0.5px] ring-base-115 dark:ring-base-115 border-base-115 dark:border-base-115',
         className,
@@ -38,7 +38,7 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
         <IconCaret />
       </span>
       <span className={twMerge(
-        'absolute top-1/2 left-1 -translate-y-1/2 px-1 bg-main transition-all duration-300 text-main text-sm',
+        'absolute top-1/2 left-1 -translate-y-1/2 px-1 bg-primary transition-all duration-300 text-primary text-sm',
         value && 'top-0 text-xs font-semibold',
         show && 'top-0 text-xs font-semibold',
         cx?.label
@@ -48,7 +48,7 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
       <span className={twMerge('', cx?.value)}>{value}</span>
       <div
         className={twMerge(
-          'absolute z-[8] bg-main p-[2px] border border-main shadow rounded left-0 right-0 -bottom-1 translate-y-full transition-all duration-300 origin-top overflow-y-auto',
+          'absolute z-[8] bg-primary p-[2px] border border-primary shadow rounded left-0 right-0 -bottom-1 translate-y-full transition-all duration-300 origin-top overflow-y-auto',
           options.length > 0 && "p-[2px]",
           show ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0',
           cx?.menu
