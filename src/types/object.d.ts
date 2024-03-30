@@ -24,5 +24,7 @@ export type Collection = {
   color: String,
   description: String,
   totalProduct: String,
-  createdAt: String
+  createdAt: String,
+  updatedAt: String,
+  deletedAt: String,
 }

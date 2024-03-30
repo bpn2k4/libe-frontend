@@ -23,8 +23,11 @@ export const TextField = ({
     <div className={twMerge('w-full text-sm relative group', className)}>
       <input
         className={twMerge(
-          'outline-none w-full h-10 border pl-2 pr-2 border-base-219 dark:border-base-54 rounded bg-transparent transition-all hover:border-base-115 dark:hover:border-base-115 hover:ring-[0.5px] hover:ring-base-115 dark:hover:ring-base-115',
-          'focus-within:border-base-115 dark:focus-within:border-base-115 focus-within:ring-[0.5px] focus-within:ring-base-115 dark:focus-within:ring-base-115',
+          'outline-none w-full h-10 pl-2 pr-2 border border-primary rounded bg-transparent transition-all focus-within:ring-[0.5px] hover:ring-[0.5px]',
+          'hover:border-rgb-190 dark:hover:border-rgb-70',
+          'hover:ring-rgb-190 dark:hover:ring-rgb-70',
+          'focus-within:border-rgb-190 dark:focus-within:border-rgb-70',
+          'focus-within:ring-base-190 dark:focus-within:ring-rgb-70',
           error && 'border-red-500 dark:border-red-500',
           cx?.input
         )}

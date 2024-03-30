@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { homeReducer } from '~/slices';
+import { adminCollectionReducer } from '~/slices/AdminCollection';
 
 const reducer = {
-  home: homeReducer
+  home: homeReducer,
+  adminCollection: adminCollectionReducer,
 }
 
 const store = configureStore({

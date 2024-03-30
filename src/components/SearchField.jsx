@@ -23,7 +23,7 @@ export const SearchField = ({ className, value, onChange, cx, placeHolder, showI
           className="size-8 absolute top-1 right-[6px]"
           onClick={onClickButtonClear} />
       )}
-      {isLoading && (<IconSpinner className="absolute top-3 right-[14px] size-4" />)}
+      {/* {isLoading && (<IconSpinner className="absolute top-3 right-[14px] size-4" />)} */}
     </div>
   )
 }

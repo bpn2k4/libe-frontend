@@ -1,5 +1,6 @@
 import {
-  User
+  User,
+  Collection
 } from './object'
 
 type Response = {
@@ -23,9 +24,26 @@ type RegisterForm = {
   phone?: String,
   email?: String
 } | FormData
+
 export type AuthApi = {
 
   login: (data: LoginForm) => Promise<Response & { user: User }>,
 
   register: (data: RegisterForm) => Promise<Response & { user: User }>,
+}
+
+
+
+type GetListCollectionParams = {
+  page: Number,
+  limit: Number
+}
+
+export type CollectionApi = {
+  createCollection: (data) => Promise<Response & { user: User }>,
+  getProductInCollection: (collectionId) => Promise<Response & { user: User }>,
+  updateCollection: (data) => Promise<Response & { user: User }>,
+  deleteCollection: (data) => Promise<Response & { user: User }>,
+  getOneCollection: (params) => Promise<Response & { user: User }>,
+  getListCollection: (params: GetListCollectionParams) => Promise<Response & { total: Number, collections: Collection[] }>,
 }

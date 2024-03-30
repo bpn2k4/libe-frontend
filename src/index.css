@@ -33,7 +33,7 @@ html, body, label {
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 4px;
     height: 8px;
 }
 
@@ -44,7 +44,7 @@ html, body, label {
 
 ::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 6px;
+    border-radius: 4px;
     border: 10px solid transparent;
 }
 

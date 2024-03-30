@@ -1,5 +1,6 @@
 import base from "./base"
 
+/**@type {import("~/types").CollectionApi} */
 const Collection = {
   createCollection: (data) => {
     const url = `/collection`
@@ -17,9 +18,13 @@ const Collection = {
     const url = `/collection`
     return base.delete(url, { data: data })
   },
-  getOneCollection: (data) => {
+  getOneCollection: (params) => {
     const url = `/collection`
-    return base.get(url, { params: data })
+    return base.get(url, { params: params })
+  },
+  getListCollection: (params) => {
+    const url = `/collection`
+    return base.get(url, { params: params })
   }
 }
 
