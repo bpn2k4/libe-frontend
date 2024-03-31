@@ -10,8 +10,8 @@ const Collection = {
     const url = `/collection/${collectionId}/products`
     return base.get(url)
   },
-  updateCollection: (data) => {
-    const url = `/collection`
+  updateCollection: (collectionId, data) => {
+    const url = `/collection/${collectionId}`
     return base.patch(url, data)
   },
   deleteCollection: (data) => {

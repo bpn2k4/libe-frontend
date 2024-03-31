@@ -1,30 +1,49 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Modal } from "./Modal"
 import { IconCancel } from "./Icon"
 import { ButtonCancelCircle } from "./ButtonCancelCircle"
 import Util from "~/utils"
+import { useTranslation } from "react-i18next"
+import { GroupButtonModal } from "./GroupButtonModal"
 
-const defaultConfig = {
-  title: "Title",
-  message: "Message",
-  buttonLeftText: "Cancel",
-  buttonRightText: "Cancel"
-}
 
 export const ModalConfirm = () => {
 
+  const { t } = useTranslation()
+
+  const defaultConfig = {
+    title: "Title",
+    message: "Message",
+    buttonLeft: {
+      text: t("No"),
+      onClick: () => setShow(false)
+    },
+    buttonRight: {
+      text: t("Yes")
+    }
+  }
   const [show, setShow] = useState(false)
   const [config, setConfig] = useState({ ...defaultConfig })
 
   Util.modalConfirm = {
     isShow: show,
-    show: () => {
+    show: (_config = {}) => {
+      setConfig({
+        ...defaultConfig,
+        ..._config
+      })
       setShow(true)
     },
     hide: () => {
       setShow(false)
     },
   }
+
+  useEffect(() => {
+    if (!show) {
+      setConfig({ ...defaultConfig })
+    }
+  }, [show])
 
   return (
     <Modal show={show} onClickOutsize={() => setShow(false)}>
@@ -36,10 +55,13 @@ export const ModalConfirm = () => {
           <span className="font-semibold">{config.title}</span>
           <span className="mt-1">{config.message}</span>
         </div>
-        <div className="w-full flex flex-row gap-1 text-sm font-semibold">
-          <button className="w-full h-10 border rounded border-primary">OK</button>
-          <button className="w-full h-10 border rounded border-primary">Cancel</button>
-        </div>
+        <GroupButtonModal
+          buttonLeft={{
+            ...config.buttonLeft
+          }}
+          buttonRight={{
+            ...config.buttonRight
+          }} />
       </div>
     </Modal>
   )

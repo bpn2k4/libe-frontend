@@ -5,6 +5,7 @@ import {
 
 type Response = {
   status: 'SUCCESS' | 'FAIL',
+  result: 'SUCCESS' | 'FAIL',
   error: String,
   errorCode: Number,
   code: Number,
@@ -39,10 +40,22 @@ type GetListCollectionParams = {
   limit: Number
 }
 
+type CreateCollectionData = {
+  name: String,
+  color: String,
+  description: String,
+}
+
+type UpdateCollectionData = {
+  name: String,
+  color: String,
+  description: String,
+}
+
 export type CollectionApi = {
-  createCollection: (data) => Promise<Response & { user: User }>,
+  createCollection: (data: CreateCollectionData) => Promise<Response & { collection: Collection }>,
   getProductInCollection: (collectionId) => Promise<Response & { user: User }>,
-  updateCollection: (data) => Promise<Response & { user: User }>,
+  updateCollection: (collectionId: Number, data: UpdateCollectionData) => Promise<Response & { collection: Collection }>,
   deleteCollection: (data) => Promise<Response & { user: User }>,
   getOneCollection: (params) => Promise<Response & { user: User }>,
   getListCollection: (params: GetListCollectionParams) => Promise<Response & { total: Number, collections: Collection[] }>,

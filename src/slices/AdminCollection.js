@@ -11,7 +11,7 @@ const initialState = {
   collections: [],
   total: 1,
   page: 0,
-  limit: 10,
+  limit: 5,
   error: null
 }
 

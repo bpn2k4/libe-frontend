@@ -4,7 +4,7 @@ import { IconCaret } from "./Icon"
 import { CheckBox } from "./CheckBox"
 
 /**@type {import('~/types').Select} */
-export const Select = ({ className, disable = false, options = [], ref, onSelect, cx, checkBox, value, label, closeAfterSelect = true }) => {
+export const Select = ({ className, disable = false, options = [], ref, onSelect, cx, checkBox, value, label, closeAfterSelect = true, position = 'bottom' }) => {
 
   const [show, setShow] = useState(false)
 
@@ -25,9 +25,11 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
   return (
     <div
       className={twMerge(
-        'w-40 h-10 rounded border border-primary flex flex-row items-center px-2 relative transition-all ring-0',
+        'w-40 h-10 rounded border border-primary flex flex-row items-center pl-2 relative transition-all ring-0 pr-5',
         disable && 'cursor-default opacity-70',
-        show && 'ring-[0.5px] ring-base-115 dark:ring-base-115 border-base-115 dark:border-base-115',
+        show && 'ring-[0.5px] ring-rgb-190 dark:ring-rgb-70 border-rgb-190 dark:border-rgb-70',
+        'hover:border-rgb-190 dark:hover:border-rgb-70',
+        'hover:ring-[0.5px] hover:ring-rgb-190 dark:hover:ring-rgb-70',
         className,
         cx?.wrapper
       )}>
@@ -48,8 +50,9 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
       <span className={twMerge('', cx?.value)}>{value}</span>
       <div
         className={twMerge(
-          'absolute z-[8] bg-primary p-[2px] border border-primary shadow rounded left-0 right-0 -bottom-1 translate-y-full transition-all duration-300 origin-top overflow-y-auto',
-          options.length > 0 && "p-[2px]",
+          'absolute z-[8] bg-main py-[2px] border border-primary rounded left-0 right-0 transition-all duration-300 overflow-y-auto shadow-primary',
+          options.length > 0 && "py-[2px]",
+          position == 'bottom' ? 'origin-top top-11' : 'origin-bottom bottom-9',
           show ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0',
           cx?.menu
         )}
@@ -58,7 +61,7 @@ export const Select = ({ className, disable = false, options = [], ref, onSelect
           <button
             key={index}
             className={twMerge(
-              'w-full flex flex-row h-8 items-center gap-1 px-[2px]',
+              'w-full flex flex-row h-8 items-center gap-1 px-1',
               !item.disable && 'hover:bg-base-242 hover:dark:bg-base-54',
               cx?.item
             )}

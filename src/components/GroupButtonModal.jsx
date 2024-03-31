@@ -13,8 +13,9 @@ export const GroupButtonModal = ({ className, cx, buttonLeft, buttonRight }) => 
         'hover:border-rgb-190 dark:hover:border-rgb-70',
         'hover:ring-rgb-190 dark:hover:ring-rgb-70',
         cx?.buttonLeft,
-        buttonLeft?.className)}>
-        Cancel
+        buttonLeft?.className)}
+        onClick={buttonLeft?.disable ? _onClick : buttonLeft?.onClick}>
+        {buttonLeft?.text ?? 'Cancel'}
       </button>
       <button
         className={twMerge(
@@ -25,7 +26,7 @@ export const GroupButtonModal = ({ className, cx, buttonLeft, buttonRight }) => 
           buttonRight?.className)}
         onClick={buttonRight?.disable ? _onClick : buttonRight?.onClick}>
         {/* {!buttonRight?.isLoading && (<IconSpinner className="mr-3" />)} */}
-        OK
+        {buttonRight?.text ?? 'OK'}
       </button>
     </div>
   )

@@ -1,3 +1,4 @@
+import { ACTION_TYPE } from "~/configs";
 
 
 const Util = {
@@ -16,6 +17,7 @@ const Util = {
     show: () => 1,
     hide: () => 1
   },
+  /**@type {import("~/types").ModalConfirm} */
   modalConfirm: {
     isShow: false,
     show: () => 1,
@@ -25,6 +27,7 @@ const Util = {
   /**@type {import("~/types").ModalCollection} */
   modalCollection: {
     isShow: false,
+    type: ACTION_TYPE,
     show: () => 1,
     hide: () => 1
   },

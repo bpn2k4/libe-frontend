@@ -44,7 +44,8 @@ type SelectProps = {
   disable?: Boolean,
   onSelect?: (option: Option) => void,
   closeAfterSelect: Boolean
-  ref: any
+  ref: any,
+  position: 'bottom' | 'top'
 }
 export type Select = (props: SelectProps) => JSX.Element
 

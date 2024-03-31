@@ -8,7 +8,7 @@ const base = axios.create({
   baseURL: `${API_BASE_URL}/api/v1`,
   paramsSerializer: params => queryString.stringify(params),
   headers: {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
   },
 })
 
@@ -17,24 +17,58 @@ base.interceptors.request.use((config) => {
   if (accessToken) {
     config.headers.Authorization = `Bearer ${accessToken}`;
   }
+  // Debug axios call API
   if (config.method == 'get') {
-    console.log("[AXIOS]-[SEND]", "\n", "Method: GET", "\n", `URL: ${config.baseURL}/${config.url}`, '\n', `Params:`, config.params)
+    console.log(
+      '[AXIOS]-[SEND]', '\n',
+      'Method: GET', '\n',
+      `URL: ${config.baseURL}/${config.url}`, '\n',
+      `Params:`, config.params
+    )
+  }
+  if (config.method == 'post' || config.method == 'patch') {
+    console.log('[AXIOS]-[SEND]', '\n',
+      'Method: GET', '\n',
+      `URL: ${config.baseURL}/${config.url}`, '\n',
+      `Params:`, config.params, '\n',
+      'Body:', config.data
+    )
   }
   config.startTime = Util.getCurrentTime()
-  return config;
+  return config
 })
 
 base.interceptors.response.use(
-  //Success
+  // Success
   response => {
     const config = response.config
-    if (config.method == "get") {
-      console.log("[AXIOS]-[RESPONSE]", "\n", "Method: GET", "\n", `URL: ${config.baseURL}/${response.config.url}`, '\n', `Params:`, config.params, "\n", "Response:", response.data, "\n", `Start: ${config.startTime}`, '\n', `Finish: ${Util.getCurrentTime()}`)
+    if (config.method == 'get') {
+      console.log(
+        '[AXIOS]-[RESPONSE]', '\n',
+        'Method: GET', '\n',
+        `URL: ${config.baseURL}/${response.config.url}`, '\n',
+        `Params:`, config.params, '\n',
+        'Response:', response.data, '\n',
+        `Start:  ${config.startTime}`, '\n',
+        `Finish: ${Util.getCurrentTime()}`
+      )
+    }
+    if (config.method == 'post' || config.method == 'patch') {
+      console.log(
+        '[AXIOS]-[RESPONSE]', '\n',
+        'Method: GET', '\n',
+        `URL: ${config.baseURL}/${response.config.url}`, '\n',
+        'Params:', config.params, '\n',
+        'Body:', config.data, '\n',
+        'Response:', response.data, '\n',
+        `Start:  ${config.startTime}`, '\n',
+        `Finish: ${Util.getCurrentTime()}`
+      )
     }
     if (response.data) return response.data
     return response
   },
-  //Fail
+  // Fail
   /**@param {} error */
   async error => {
     if (!error.response) { }

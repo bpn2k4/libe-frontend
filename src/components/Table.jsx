@@ -2,6 +2,7 @@ import { twMerge } from 'tailwind-merge'
 import { Pagination } from './Pagination'
 import { Select } from './Select'
 import { IconSpinner } from './Icon'
+import { useTranslation } from 'react-i18next'
 
 /**@type {import('~/types').Table} */
 export const Table = ({ className, children, cx, isLoading }) => {
@@ -13,7 +14,7 @@ export const Table = ({ className, children, cx, isLoading }) => {
       cx?.wrapper
     )}>
       <table className={twMerge(
-        'table border-collapse w-full table-auto min-w-[800px] mb-2 min-h-80',
+        ' border-collapse w-full table-auto min-w-[800px] mb-2 border-b border-primary',
         cx?.table
       )}>
         {children}
@@ -52,7 +53,7 @@ export const TableHead = ({ className, children }) => {
 
 export const TableRow = ({ className, children }) => {
   return (
-    <tr className={twMerge('even:bg-base-245 dark:even:bg-base-20 dark:hover:bg-base-40 cursor-pointer', className)}>
+    <tr className={twMerge('odd:bg-base-245 dark:odd:bg-base-20 dark:hover:bg-base-40 cursor-pointer', className)}>
       {children}
     </tr>
   )
@@ -76,7 +77,7 @@ export const TableCell = ({ th = false, className, children }) => {
   )
 }
 
-export const TablePagination = ({ className, total, page, onChangePage, numberPerPage, onChangeNumberPerPage }) => {
+export const TablePagination = ({ className, total, page, onChangePage, numberPerPage, onChangeNumberPerPage, options, numberDisplay, cx }) => {
 
   return (
     <div className={twMerge('flex flex-row justify-between', className)}>
@@ -87,8 +88,12 @@ export const TablePagination = ({ className, total, page, onChangePage, numberPe
         onChange={onChangePage}
         numberPerPage={numberPerPage} />
       <Select
+        position='top'
+        className={cx?.select}
         cx={{ wrapper: 'h-8' }}
-        value="Hiển thị 15 sản phẩm" />
+        options={options}
+        onSelect={onChangeNumberPerPage}
+        value={numberDisplay} />
     </div>
   )
 }
