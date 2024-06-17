@@ -1,50 +1,30 @@
-# This project uses Vite + React + TailwindCSS
+# React + TypeScript + Vite
 
-## 1. Setting VS Code
-- Install extension Tailwind CSS IntelliSense
-- Copy this config to your VS.Code json setting (this will enable tailwind intelligent)
-```json
-    "editor.wordWrap": "on",
-    "tailwindCSS.includeLanguages": {
-        "html": "html",
-        "javascript": "javascript",
-        "css": "css"
-    },
-    "files.associations": {
-        "*.css": "tailwindcss"
-    },
-    "tailwindCSS.classAttributes": [
-        "class",
-        "className",
-        "ngClass",
-        "cx",
-        "utilities"
-    ],
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
 ```
 
-
-
-## 2. Preview build
-- Install extension Live Server
-- Remove previous build if need
-- At root folder run: `npm run build`
-- `cd dist && code .`
-- Click `Go Live` button, then open `http://127.0.0.1:5500`
-Note: Must be `http://127.0.0.1:5500` not `http://127.0.0.1:5500/index.html` for `react-router-dom` works correctly
-
-## 3. Build docker image
-  At root folder
-  `docker build -t fe .`
-  `docker run -dp 80:80 fe`
-  then open `http://localhost`
-
-## 4. Note
-- Every config, custom class, ... will set in `tailwind.config.js`
-
-<a
-  href="https://www.svgrepo.com/collection/software-mansion-line-icons/4">
-Icon Link
-</a>
-
-
-
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
