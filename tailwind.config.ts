@@ -6,7 +6,8 @@ type Utilities = {
 }
 
 const utilities: Utilities = {
-  '.bg-primary': { '@apply bg-rgb-255 dark:bg-rgb-0': 0 },
+  '.bg-primary': { '@apply bg-rgb-240 dark:bg-rgb-15': 0 },
+  '.text-primary': { '@apply text-sm text-rgb-15 dark:text-rgb-240': 0 },
 }
 
 const config: Config = {
@@ -22,6 +23,8 @@ const config: Config = {
       colors: {
         rgb: {
           0: 'rgb(0,0,0)',
+          15: 'rgb(15,15,15)',
+          240: 'rgb(240,240,240)',
           255: 'rgb(255,255,255)',
         },
       },
