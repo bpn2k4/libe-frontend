@@ -4,7 +4,7 @@ import { twMerge } from '@hooks'
 
 const ShopFooter = () => {
 
-  const sections = [
+  const sections: FooterSection[] = [
     {
       title: 'ABOUT US',
       items: [
@@ -44,7 +44,7 @@ const ShopFooter = () => {
     <footer className='w-full pb-10'>
       <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-3'>
         {sections.map(({ title, items }, index) => (
-          <GroupItem
+          <FooterSection
             key={index}
             title={title}
             items={items} />
@@ -54,7 +54,7 @@ const ShopFooter = () => {
   )
 }
 
-const GroupItem = (props: GroupItemProps) => {
+const FooterSection = (props: FooterSectionProps) => {
 
   const { title, items = [] } = props
 
@@ -62,19 +62,18 @@ const GroupItem = (props: GroupItemProps) => {
     <div className='flex flex-col gap-1'>
       <span className='py-3 mb-3 border-b text-xl font-medium'>{title}</span>
       {items.map(({ title, link, onClick }, index) => (
-        <ItemFooter
+        <FooterItem
           key={index}
           title={title}
           link={link}
           onClick={onClick}
         />
       ))}
-
     </div>
   )
 }
 
-const ItemFooter = (props: ItemFooterProps) => {
+const FooterItem = (props: FooterItemProps) => {
 
   const { title, link, onClick } = props
 
@@ -97,17 +96,19 @@ const ItemFooter = (props: ItemFooterProps) => {
   )
 }
 
-export default ShopFooter
-
-type GroupItemProps = {
-  title?: string,
-  items: Item[]
-}
-
-type Item = {
+type FooterItem = {
   title?: string,
   link?: string,
   onClick?: () => void
 }
 
-type ItemFooterProps = Item
+type FooterItemProps = FooterItem
+
+type FooterSection = {
+  title?: string,
+  items: FooterItem[]
+}
+
+type FooterSectionProps = FooterSection
+
+export default ShopFooter
