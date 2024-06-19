@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import AppRouter from './AppRouter'
 import i18n from '@libs/i18n'
 import store from '@libs/redux-store'
+import GlobalComponent from '@components/GlobalComponent'
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
     <Provider store={store}>
       <I18nextProvider i18n={i18n}>
         <AppRouter
-        // children={<GlobalComponent />}
+          children={<GlobalComponent />}
         />
       </I18nextProvider>
     </Provider>

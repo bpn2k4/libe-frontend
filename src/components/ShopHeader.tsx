@@ -3,6 +3,7 @@ import { useState, useEffect, twMerge, useTranslation, useRef } from '@hooks'
 import ToggleTheme from './ToggleTheme'
 import { IconCart, IconSearch, IconThreeLine, IconUser } from './Icon'
 import ButtonIconRounded from './ButtonIconRounded'
+import Utils from '@utils'
 
 
 const ShopHeader = () => {
@@ -15,7 +16,7 @@ const ShopHeader = () => {
         </Link>
       </div>
       <div className='z-1 center'>
-        <button onClick={() => console.log(123)}>SHOP</button>
+        <button onClick={() => Utils.GlobalComponent.ShopMenuLeft.show()}>SHOP</button>
       </div>
       <div className='flex-1'></div>
       <div className='z-1'>

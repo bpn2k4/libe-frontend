@@ -1,1 +1,8 @@
-console.log("Hello World")
+import GlobalComponent from './GlobalComponent';
+
+
+const Utils = {
+  GlobalComponent
+}
+
+export default Utils
