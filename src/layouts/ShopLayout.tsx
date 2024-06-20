@@ -11,6 +11,7 @@ const ShopLayout = (props: ShopLayoutProps) => {
       <ShopHeader />
       {children}
       <ShopFooter />
+      <div className='w-full py-2 text-center'>Power by GPT-4o</div>
     </Container>
   )
 }

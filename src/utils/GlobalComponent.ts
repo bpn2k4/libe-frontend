@@ -4,9 +4,21 @@ const ShopMenuLeft = {
   show: () => { },
   hide: () => { },
 }
+const ShopCartRight = {
+  isShow: false,
+  show: () => { },
+  hide: () => { },
+}
+const ShopSearchRight = {
+  isShow: false,
+  show: () => { },
+  hide: () => { },
+}
 
 const GlobalComponent = {
-  ShopMenuLeft
+  ShopMenuLeft,
+  ShopCartRight,
+  ShopSearchRight
 }
 
 export default GlobalComponent

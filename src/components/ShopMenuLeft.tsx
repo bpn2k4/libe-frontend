@@ -95,7 +95,6 @@ const ShopMenuLeft = () => {
           ))}
         </div>
       </div>
-
     </div>
   )
 }

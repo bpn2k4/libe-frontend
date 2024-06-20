@@ -42,12 +42,14 @@ const GroupButton = () => {
   return (
     <div className='h-11 flex flex-row items-center w-0 md:w-[128px] transition-all overflow-hidden gap-1 duration-500'>
       <ButtonIconRounded
-        icon={<IconSearch />} />
+        icon={<IconSearch />}
+        onClick={() => Utils.GlobalComponent.ShopSearchRight.show()} />
       <ButtonIconRounded
-        icon={<IconCart />} />
+        icon={<IconCart />}
+        onClick={() => Utils.GlobalComponent.ShopCartRight.show()} />
       <ButtonIconRounded
         icon={<IconUser />}
-        link='/product' />
+        link='/dashboard' />
     </div>
   )
 }
@@ -95,7 +97,7 @@ const GroupButtonMobile = () => {
           className='h-9 px-1 flex gap-2 flex-row items-center rounded hover:bg-rgb-215 dark:hover:bg-rgb-60'
           onClick={() => {
             setShow(false)
-
+            Utils.GlobalComponent.ShopSearchRight.show()
           }}>
           <IconSearch />
           <span>{t('Search')}</span>
@@ -104,7 +106,7 @@ const GroupButtonMobile = () => {
           className='h-9 px-1 flex gap-2 flex-row items-center rounded hover:bg-rgb-215 dark:hover:bg-rgb-60'
           onClick={() => {
             setShow(false)
-
+            Utils.GlobalComponent.ShopCartRight.show()
           }}>
           <IconCart />
           <span>{t('Cart')}</span>
