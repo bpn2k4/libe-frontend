@@ -7,7 +7,7 @@ const AdminLayout = (props: AdminLayoutProps) => {
   const { children } = props
 
   return (
-    <Container className='overflow-y-hidden overflow-x-hidden '>
+    <Container className='overflow-y-hidden overflow-x-hidden'>
       <AdminHeader />
       <div className='w-full h-full flex flex-row relative text-xs'>
         <AdminNavbar />

@@ -12,7 +12,8 @@ const AdminHeader = () => {
     <header className={twMerge(
       'w-full h-14 px-5',
       'flex flex-row items-center justify-between',
-      'text-sm bg-secondary'
+      'text-sm bg-secondary',
+      'border-b-2 border-rgb-240 dark:border-rgb-20'
     )}>
       <div className='h-14 flex flex-row items-center'>
         <div className='w-10 h-10 overflow-hidden md:w-0'>

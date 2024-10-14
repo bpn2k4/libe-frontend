@@ -27,8 +27,8 @@ const AdminNavbar = () => {
   return (
     <nav className='h-full text-xs bg-secondary'>
       <div className={twMerge(
-        'overflow-hidden transition-all hidden md:block',
-        show ? 'w-60' : 'w-0'
+        'w-0 overflow-hidden transition-all',
+        show ? 'md:w-60' : 'md:w-0'
       )}>
         <div className='w-60'>
           <AdminNavbarContent />
@@ -138,7 +138,7 @@ const NavbarItem = (props: NavbarItemProps) => {
       'hover:bg-rgb-230 dark:hover:bg-rgb-30',
       active && 'font-semibold bg-rgb-240 dark:bg-rgb-30'
     )}>
-      <div className='size-6 mr-3 center'>
+      <div className='size-6 mr-2 flex flex-row items-center'>
         {icon}
       </div>
       <span className=''>{title}</span>
