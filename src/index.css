@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html, body, label {
   font-family: 'Roboto', sans-serif;
+}
+html, body, label {
+  font-family: "Inter", sans-serif;
 }
 .no-scrollbar::-webkit-scrollbar {
   width: 0;
@@ -17,8 +21,8 @@ html, body, label {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
 }
 
 .track-dark::-webkit-scrollbar-track {

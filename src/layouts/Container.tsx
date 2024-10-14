@@ -1,4 +1,5 @@
-import { twMerge, useSystemSelector } from '@hooks'
+import { useSystemSelector } from '@hooks'
+import { twMerge } from 'tailwind-merge'
 
 const Container = (props: ContainerProps) => {
 
@@ -8,7 +9,7 @@ const Container = (props: ContainerProps) => {
 
   return (
     <div className={twMerge(
-      'w-full h-dvh min-h-dvh bg-primary text-primary overflow-y-auto transition-all duration-300',
+      'w-full h-dvh bg-primary text-primary overflow-y-auto transition-all duration-300',
       theme == 'light' ? 'track-light' : 'track-dark',
       className
     )}>

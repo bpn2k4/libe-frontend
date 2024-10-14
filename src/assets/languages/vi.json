@@ -1,3 +1,10 @@
 {
-  "All": "Tất cả"
+  "All": "Tất cả",
+  "Collection": "Bộ sưu tập",
+  "Manager": "Quản lý",
+  "CollectionManager": "Quản lý Bộ sưu tập",
+  "ProductManager": "Quản lý Sản phẩm",
+  "StoreManager": "Quản lý Cửa hàng",
+  "UserManager": "Quản lý Người dùng",
+  "WarehouseManager": "Quản lý Kho"
 }

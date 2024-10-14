@@ -3,6 +3,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import ShopLayout from '@layouts/ShopLayout'
 import AdminLayout from '@layouts/AdminLayout'
+import CollectionManager from '@pages/CollectionManager'
+import ProductManager from '@pages/ProductManager'
+import StoreManager from '@pages/StoreManager'
+import UserManager from '@pages/UserManager'
 
 const Home = React.lazy(() => import('@pages/Home'))
 const Product = React.lazy(() => import('@pages/Product'))
@@ -24,11 +28,41 @@ const routes = [
     element: <Product />
   },
   {
-    path: '/dashboard',
+    path: '/admin/collection',
     element: (
       <AdminLayout>
         <Suspense>
-          <Dashboard />
+          <CollectionManager />
+        </Suspense>
+      </AdminLayout>
+    )
+  },
+  {
+    path: '/admin/product',
+    element: (
+      <AdminLayout>
+        <Suspense>
+          <ProductManager />
+        </Suspense>
+      </AdminLayout>
+    )
+  },
+  {
+    path: '/admin/store',
+    element: (
+      <AdminLayout>
+        <Suspense>
+          <StoreManager />
+        </Suspense>
+      </AdminLayout>
+    )
+  },
+  {
+    path: '/admin/user',
+    element: (
+      <AdminLayout>
+        <Suspense>
+          <UserManager />
         </Suspense>
       </AdminLayout>
     )

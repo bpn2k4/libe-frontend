@@ -1,21 +1,24 @@
-import { useSystemSelector, useDispatch } from "@hooks"
-import { setTheme } from "@slices/System"
-
+import HomeGroupImage from '@components/HomeGroupImage'
+import HomeGroupStory from '@components/HomeGroupStory'
+import HomeMarquee from '@components/HomeMarquee'
+import HomeSlider from '@components/HomeSlider'
+import HomeSubscribe from '@components/HomeSubscribe'
 
 const Home = () => {
 
-  const { theme } = useSystemSelector()
-  const dispatch = useDispatch()
-
-
   return (
-    <div className="bg-red-400 dark:bg-blue-500 h-[1000px]">Home
-
+    <div className='w-full'>
+      {/* 
       <button className='px-4 py-2 border' onClick={() => {
         dispatch(setTheme(theme == 'light' ? 'dark' : 'light'))
       }}>
         Click Me
-      </button>
+      </button> */}
+      <HomeGroupImage />
+      <HomeMarquee />
+      <HomeSlider />
+      <HomeGroupStory />
+      <HomeSubscribe />
     </div>
   )
 }

@@ -1,8 +1,12 @@
-import { useLayoutEffect, useState, twMerge } from '@hooks'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { twMerge } from 'tailwind-merge'
+
+import Utils from '@utils'
+
 import ButtonIconRounded from './ButtonIconRounded'
 import { IconCancel, IconCaret } from './Icon'
-import Utils from '@utils'
-import { Link } from 'react-router-dom'
+import { useDebounce } from '@hooks'
 
 const ShopMenuLeft = () => {
 
@@ -70,32 +74,44 @@ const ShopMenuLeft = () => {
     },
   ]
 
+  const _show = useDebounce(show, show ? 0 : 400)
+  const __show = useDebounce(show, show ? 100 : 0)
+
   return (
-    <div>
-      {show && <div className='fixed z-[10] offset-0 bg-black/50' onClick={() => setShow(false)} />}
-      <div className={twMerge(
-        'fixed z-[11] top-0 left-0 bottom-0 w-full md:max-w-[400px] bg-primary text-primary font-semibold origin-left transition-transform duration-300',
-        show ? 'scale-x-100' : 'scale-x-0'
-      )}>
+    _show ? (
+      <div>
+        {show && (
+          <div className='fixed z-5 top-0 left-0 right-0 bottom-0 bg-black/50' onClick={() => setShow(false)} />
+        )}
         <div className={twMerge(
-          'absolute offset-0 overflow-y-auto no-scrollbar pl-8 pr-4 pt-4'
+          'fixed z-6 top-0 left-0 bottom-0 w-full md:max-w-[400px]',
+          'bg-primary text-primary font-semibold origin-left transition-transform duration-300',
+          __show ? 'translate-x-0' : '-translate-x-full'
         )}>
-          <div className='flex justify-end'>
-            <ButtonIconRounded
-              icon={<IconCancel />}
-              className=''
-              onClick={() => setShow(false)} />
+          <div className={twMerge(
+            'absolute top-0 left-0 right-0 bottom-0 pl-8 pr-4 pt-4',
+            'overflow-y-auto no-scrollbar'
+          )}>
+            <div className='flex justify-end'>
+              <ButtonIconRounded
+                icon={<IconCancel />}
+                className=''
+                onClick={() => setShow(false)} />
+            </div>
+            {collections.map(({ name, link, items }, index) => (
+              <ButtonCollection
+                key={index}
+                name={name}
+                link={link}
+                items={items} />
+            ))}
           </div>
-          {collections.map(({ name, link, items }, index) => (
-            <ButtonCollection
-              key={index}
-              name={name}
-              link={link}
-              items={items} />
-          ))}
         </div>
       </div>
-    </div>
+    ) : (
+      <></>
+    )
+
   )
 }
 
@@ -118,7 +134,7 @@ const ButtonCollection = (props: ButtonCollectionProps) => {
           </Link>
           <button
             className={twMerge(
-              'w-6 h-6 ml-1 center rounded-full hover:bg-rgb-215 hover:dark:bg-rgb-60 transition-transform',
+              'w-6 h-6 ml-1 flex items-center justify-center rounded-full hover:bg-rgb-215 hover:dark:bg-rgb-60 transition-transform',
               show ? 'rotate-0' : 'rotate-90'
             )}
             onClick={() => setShow(!show)}>

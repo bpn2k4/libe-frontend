@@ -1,3 +1,6 @@
+import { "🍚" as AdminNavbarMobile } from './AdminNavbar'
+import CollectionModal from './CollectionModal'
+import ConfirmModal from './ConfirmModal'
 import ShopCartRight from './ShopCartRight'
 import ShopMenuLeft from './ShopMenuLeft'
 import ShopSearchRight from './ShopSearchRight'
@@ -7,9 +10,12 @@ const GlobalComponent = () => {
 
   return (
     <>
-      <ShopMenuLeft />
+      <ConfirmModal />
       <ShopCartRight />
+      <ShopMenuLeft />
       <ShopSearchRight />
+      <CollectionModal />
+      <AdminNavbarMobile />
     </>
   )
 }

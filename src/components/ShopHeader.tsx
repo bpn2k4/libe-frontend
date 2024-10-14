@@ -1,16 +1,20 @@
+import { useState, useEffect, useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { useState, useEffect, twMerge, useTranslation, useRef } from '@hooks'
-import ToggleTheme from './ToggleTheme'
-import { IconCart, IconSearch, IconThreeLine, IconUser } from './Icon'
-import ButtonIconRounded from './ButtonIconRounded'
+import { twMerge } from 'tailwind-merge'
+
 import Utils from '@utils'
+
+import ButtonIconRounded from './ButtonIconRounded'
+import { IconBars, IconCart, IconSearch, IconUser } from './Icon'
+import ToggleTheme from './ToggleTheme'
 
 
 const ShopHeader = () => {
 
   return (
-    <header className='w-full h-20 px-3 flex flex-row border-b relative'>
-      <div className='absolute offset-0 center'>
+    <header className='w-full h-20 px-3 flex flex-row border-b relative z-[5]'>
+      <div className='absolute top-0 left-0 right-0 bottom-0 center'>
         <Link to='/'>
           <h1 className='text-4xl font-bold p-4'>LIBÉ</h1>
         </Link>
@@ -48,8 +52,8 @@ const GroupButton = () => {
         icon={<IconCart />}
         onClick={() => Utils.GlobalComponent.ShopCartRight.show()} />
       <ButtonIconRounded
-        icon={<IconUser />}
-        link='/dashboard' />
+        icon={<IconUser className='w-5 h-5' />}
+        link='/admin/collection' />
     </div>
   )
 }
@@ -77,19 +81,19 @@ const GroupButtonMobile = () => {
   }, [menuRef])
 
   return (
-    <div className='relative ml-1 md:ml-0'>
+    <div className='relative ml-1 md:ml-0 '>
       <button
         className={twMerge(
-          'size-10 center rounded-full text-primary hover:bg-rgb-215 dark:hover:bg-rgb-60 transition-all duration-500 md:w-0',
+          'size-10 flex items-center justify-center rounded-full text-primary hover:bg-rgb-215 dark:hover:bg-rgb-60 transition-all duration-500 md:w-0',
           show && 'bg-rgb-215 dark:bg-rgb-60',
         )}
         onClick={() => setShow(!show)}
         ref={buttonRef}>
-        <IconThreeLine />
+        <IconBars />
       </button>
       <div
         className={twMerge(
-          'absolute w-40 z-[10] top-11 -right-1 p-1 flex flex-col rounded bg-contrast shadow-primary transition-all origin-top-right',
+          'absolute w-40 z-[10] top-11 -right-1 p-1 flex flex-col rounded bg-secondary shadow-primary transition-all origin-top-right',
           show ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
         )}
         ref={menuRef}>
@@ -113,7 +117,7 @@ const GroupButtonMobile = () => {
         </button>
         <button
           className='h-9 px-1 flex gap-2 flex-row items-center rounded hover:bg-rgb-215 dark:hover:bg-rgb-60' >
-          <IconUser />
+          <IconUser className='w-5 h-5' />
           <span>{t('User')}</span>
         </button>
       </div>

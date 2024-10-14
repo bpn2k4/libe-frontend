@@ -1,6 +1,6 @@
+import { twMerge } from 'tailwind-merge'
 import { Link } from 'react-router-dom'
 
-import { twMerge } from '@hooks'
 
 const ShopFooter = () => {
 
