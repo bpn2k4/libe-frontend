@@ -1,6 +1,6 @@
 
 
-const Carousel = () => {
+const Carousel = (props: CarouselProps) => {
 
   return (
     <div>
@@ -8,5 +8,23 @@ const Carousel = () => {
     </div>
   )
 }
+
+type CarouselProps = {
+  className?: string
+}
+
+const CarouselItem = (props: CarouselItemProps) => {
+  return (
+    <div>
+
+    </div>
+  )
+}
+
+type CarouselItemProps = {
+  className?: string
+}
+
+Carousel.Item = CarouselItem
 
 export default Carousel

@@ -13,13 +13,13 @@ import ToggleTheme from './ToggleTheme'
 const ShopHeader = () => {
 
   return (
-    <header className='w-full h-20 px-3 flex flex-row border-b relative z-[5]'>
-      <div className='absolute top-0 left-0 right-0 bottom-0 center'>
+    <header className='w-full h-20 px-3 flex flex-row border-b relative z-5'>
+      <div className='absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center'>
         <Link to='/'>
           <h1 className='text-4xl font-bold p-4'>LIBÉ</h1>
         </Link>
       </div>
-      <div className='z-1 center'>
+      <div className='z-1 flex items-center justify-center'>
         <button onClick={() => Utils.GlobalComponent.ShopMenuLeft.show()}>SHOP</button>
       </div>
       <div className='flex-1'></div>
@@ -93,7 +93,7 @@ const GroupButtonMobile = () => {
       </button>
       <div
         className={twMerge(
-          'absolute w-40 z-[10] top-11 -right-1 p-1 flex flex-col rounded bg-secondary shadow-primary transition-all origin-top-right',
+          'absolute w-40 z-10 top-11 -right-1 p-1 flex flex-col rounded bg-secondary shadow-primary transition-all origin-top-right',
           show ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
         )}
         ref={menuRef}>

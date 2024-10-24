@@ -30,7 +30,7 @@ const Slider = (props: SliderProps) => {
     return () => {
       clearInterval(timer)
     }
-  }, [autoPlay])
+  }, [autoPlay, duration, numberOfItems])
 
 
   return (
@@ -49,7 +49,7 @@ const Slider = (props: SliderProps) => {
           </div>
         ))}
         <div
-          className='absolute z-[2] gap-2 flex flex-row items-center bottom-4 left-1/2 -translate-x-1/2'>
+          className='absolute z-2 gap-2 flex flex-row items-center bottom-4 left-1/2 -translate-x-1/2'>
           {showDots && new Array(numberOfItems).fill(0).map((_, index) => (
             <button
               key={index}

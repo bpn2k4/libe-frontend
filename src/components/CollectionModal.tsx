@@ -5,6 +5,7 @@ import ButtonIconRounded from './ButtonIconRounded'
 import { IconCancel } from './Icon'
 import TextField from './TextField'
 import { twMerge } from 'tailwind-merge'
+import Utils from '@utils'
 
 type CollectionModalConfig = {
   type: 'view' | 'create',
@@ -26,27 +27,36 @@ const CollectionModal = () => {
 
   const { t } = useTranslation()
 
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(true)
   const [config, setConfig] = useState({ ...defaultModalConfig })
+
+  Utils.GlobalComponent.CollectionModal = {
+    isShow: show,
+    show: () => {
+      setShow(true)
+    },
+    hide: () => {
+      setShow(false)
+    }
+  }
 
   return (
     <Modal
       show={show}
       className='max-w-[600px] flex flex-col text-xs'
       onClickOutsize={() => setShow(false)}>
-      <div className='relative border-b'>
-        <div className='h-10 flex items-center justify-center font-semibold'>
-          {t('Collection')}
-        </div>
-        <ButtonIconRounded
-          icon={<IconCancel />}
-          className='size-8 absolute top-1 right-1'
-          onClick={() => setShow(false)} />
-      </div>
 
-      <div className='flex-1 px-3 overflow-y-auto'>
+      <Modal.Header onClickButtonClose={() => setShow(false)}>
+        <span>
+          {t('Collection')}
+        </span>
+      </Modal.Header>
+
+      <Modal.Body className='px-3 py-4'>
         <TextField
           label='Name' />
+        <TextField
+          label='Slug' />
         <TextField
           textarea
           label='Description'
@@ -57,23 +67,16 @@ const CollectionModal = () => {
             setConfig({ ...config })
           }}
         />
-      </div>
+      </Modal.Body>
 
-      <div className='border-t'>
-        <div className={twMerge(
-          'h-11 px-4',
-          'flex flex-row items-center justify-center gap-4',
-          'text-rgb-255 font-medium'
-        )}>
-          <button className='flex-1 h-9 bg-red-400 rounded-md border'>
-            Hủy
-          </button>
-          <button className='flex-1 h-9 bg-blue-400 rounded-md border'>
-
-          </button>
-        </div>
-      </div>
-
+      <Modal.Footer>
+        <button className='flex-1 h-9 rounded-md border border-primary' onClick={() => setShow(false)}>
+          Cancel
+        </button>
+        <button className='flex-1 h-9 rounded-md border border-primary'>
+          Save
+        </button>
+      </Modal.Footer>
     </Modal>
   )
 }

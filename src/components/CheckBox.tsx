@@ -1,24 +1,10 @@
-import { useState } from "react"
-import { twMerge } from "tailwind-merge"
-import { IconCheck, IconSquare, IconSquareCheck } from "./Icon"
+import { twMerge } from 'tailwind-merge'
+import { IconSquare, IconSquareCheck } from './Icon'
 
 
 const CheckBox = (props: CheckBoxProps) => {
 
   const { className, cx, checked, onChange, title, disabled } = props
-
-  const [isChecked, setIsChecked] = useState(Boolean(checked || false))
-  const _onChange = (() => {
-    if (disabled) {
-      return () => { }
-    }
-
-    if (onChange) {
-      return onChange
-    }
-
-    return (isChecked: boolean) => setIsChecked(!isChecked)
-  })()
 
   return (
     <div
@@ -28,19 +14,19 @@ const CheckBox = (props: CheckBoxProps) => {
         cx?.wrapper,
         disabled && 'cursor-default'
       )}
-      onClick={() => _onChange(isChecked)}>
+      onClick={onChange}>
       <div className={twMerge('relative w-5 h-5', cx?.box)}>
         <div className={twMerge(
           'absolute top-0 left-0 bottom-0 right-0',
           'transition-transform origin-center',
-          isChecked ? 'scale-0' : 'scale-100',
+          checked ? 'scale-0' : 'scale-100',
         )}>
           <IconSquare />
         </div>
         <div className={twMerge(
           'absolute top-0 left-0 bottom-0 right-0',
           'transition-transform origin-center',
-          isChecked ? 'scale-100' : 'scale-0',
+          checked ? 'scale-100' : 'scale-0',
         )}>
           <IconSquareCheck />
         </div>

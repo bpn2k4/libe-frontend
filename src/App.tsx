@@ -6,8 +6,12 @@ import AppRouter from './AppRouter'
 import i18n from '@libs/i18n'
 import store from '@libs/redux-store'
 import GlobalComponent from '@components/GlobalComponent'
+import { API_URL } from '@configs'
+import Splash from '@components/Splash'
 
 function App() {
+
+  console.log("API_URL", API_URL)
 
   return (
     <Provider store={store}>
@@ -15,6 +19,7 @@ function App() {
         <AppRouter
           children={<GlobalComponent />}
         />
+        <Splash />
       </I18nextProvider>
     </Provider>
   )

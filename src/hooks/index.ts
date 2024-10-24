@@ -8,10 +8,12 @@ const useDispatch = useDispatchRedux.withTypes<AppDispatch>()
 
 /** A hook to select system state from the Redux store. */
 const useSystemSelector = () => useSelector(state => state.system)
+const useCollectionManagerSelector = () => useSelector(state => state.collectionManager)
 
 export {
   useDebounce,
   useSelector,
   useDispatch,
   useSystemSelector,
+  useCollectionManagerSelector
 }

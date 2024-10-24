@@ -135,7 +135,7 @@ const ButtonCollection = (props: ButtonCollectionProps) => {
           <button
             className={twMerge(
               'w-6 h-6 ml-1 flex items-center justify-center rounded-full hover:bg-rgb-215 hover:dark:bg-rgb-60 transition-transform',
-              show ? 'rotate-0' : 'rotate-90'
+              show ? '-rotate-90' : 'rotate-90'
             )}
             onClick={() => setShow(!show)}>
             <IconCaret />

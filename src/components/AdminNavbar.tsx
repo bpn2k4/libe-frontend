@@ -156,4 +156,4 @@ type NavbarItemProps = {
 
 export default AdminNavbar
 
-export { AdminNavbarMobile as "🍚" }
+export { AdminNavbarMobile }

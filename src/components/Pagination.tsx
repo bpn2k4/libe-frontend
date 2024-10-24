@@ -6,7 +6,7 @@ const Pagination = (props: PaginationProps) => {
 
   const { className, onChangePage, page = 1, totalPage = 1 } = props
 
-  const _onChangePage = onChangePage ?? ((_) => { })
+  const _onChangePage = onChangePage ?? (() => { })
 
   return (
     <div className={twMerge(
@@ -57,7 +57,7 @@ const Pagination = (props: PaginationProps) => {
           {page - 1}
         </button>
       }
-      <button className='size-7 centerrounded border border-rgb-220 dark:border-rgb-60'>
+      <button className='size-7 rounded border border-primary'>
         {page}
       </button>
       {page < totalPage &&
@@ -116,7 +116,7 @@ type PaginationProps = {
   totalPage?: number,
   renderLink?: (page: number) => string
   cx?: {
-
+    item?: string
   }
 }
 

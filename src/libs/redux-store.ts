@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 
 import systemReducer from '@slices/System'
+import collectionManagerReducer from '@slices/CollectionManager'
 
 const reducer = {
   system: systemReducer,
+  collectionManager: collectionManagerReducer
 }
 
 const store = configureStore({

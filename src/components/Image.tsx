@@ -13,10 +13,10 @@ const Image = (props: ImageProps) => {
         alt={alt}
         style={style}
         loading={skeleton ? 'lazy' : undefined}
-        className={twMerge('absolute z-[2] object-cover bg-no-repeat w-full h-full', cx?.img)} />
+        className={twMerge('absolute z-2 object-cover bg-no-repeat w-full h-full', cx?.img)} />
       {skeleton && (
-        <div className={twMerge('absolute skeleton top-0 left-0 right-0 bottom-0 center', cx?.skeleton)}>
-          <IconImagePlaceHolder className={twMerge('z-[1]', cx?.icon)} />
+        <div className={twMerge('absolute skeleton top-0 left-0 right-0 bottom-0 flex items-center justify-center', cx?.skeleton)}>
+          <IconImagePlaceHolder className={twMerge('z-1', cx?.icon)} />
         </div>
       )}
       {children}

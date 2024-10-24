@@ -30,7 +30,6 @@ const AdminNavbarMobile = {
   hide: () => { },
 }
 
-
 const GlobalComponent = {
   CollectionModal,
   ShopMenuLeft,

@@ -25,6 +25,36 @@ html, body, label {
   height: 10px;
 }
 
+.scrollbar-w-4::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-w-6::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-w-8::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar-w-10::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar-h-4::-webkit-scrollbar {
+  height: 4px;
+}
+
+.scrollbar-h-6::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-h-8::-webkit-scrollbar {
+  height: 8px;
+}
+.scrollbar-h-8::-webkit-scrollbar {
+  height: 10px;
+}
+
 .track-dark::-webkit-scrollbar-track {
   background: rgb(15, 15, 15);
 }

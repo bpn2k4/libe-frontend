@@ -6,5 +6,20 @@
   "ProductManager": "Quản lý Sản phẩm",
   "StoreManager": "Quản lý Cửa hàng",
   "UserManager": "Quản lý Người dùng",
-  "WarehouseManager": "Quản lý Kho"
+  "WarehouseManager": "Quản lý Kho",
+  "AddNewCollection": "Thêm Bộ sưu tập",
+  "Name": "Tên",
+  "Description": "Mô tả",
+  "Hidden/Show": "Ẩn/Hiện",
+  "CreatedAt": "Ngày tạo",
+  "UpdatedAt": "Ngày sửa",
+  "View": "Xem",
+  "Create": "Tạo",
+  "Update": "Cập nhật",
+  "Delete": "Xóa",
+  "ShowNumber": "Hiển thị {{number}}/{{total}}",
+  "ColumnsList": "Danh sách cột",
+  "PageNotFound": "Không tìm thấy trang",
+  "PageNotFoundDescription": "Oops, Trang bạn đang tìm kiếm không tồn tại.",
+  "Home": "Trang chủ"
 }

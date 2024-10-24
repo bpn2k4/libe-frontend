@@ -1,13 +1,14 @@
 import { twMerge } from 'tailwind-merge'
 import { useId } from 'react'
+
 import ButtonIconRounded from './ButtonIconRounded'
-import { IconCancel, IconEye, IconEyeClose } from './Icon'
+import { IconCancel } from './Icon'
 
 
 const TextField = (props: TextFieldProps) => {
 
   const {
-    className,
+    className, cx,
     label,
     placeholder,
     type,
@@ -19,7 +20,6 @@ const TextField = (props: TextFieldProps) => {
     onClickButtonClear,
     value,
     onChange,
-    cx,
     maxLength,
     showLength
   } = props
@@ -39,7 +39,8 @@ const TextField = (props: TextFieldProps) => {
         </label>
       )}
       <div className={twMerge(
-        'flex rounded-lg border overflow-hidden',
+        'flex overflow-hidden',
+        'rounded-lg border border-primary',
         !textarea && 'flex-row items-center',
         label && 'mt-1',
         cx?.border
@@ -51,7 +52,8 @@ const TextField = (props: TextFieldProps) => {
           <textarea
             id={id}
             className={twMerge(
-              'outline-none px-3 py-3 flex-1 resize-none',
+              'px-3 py-3 flex-1 resize-none',
+              'outline-none bg-transparent',
               cx?.input
             )}
             placeholder={placeholder}
@@ -64,10 +66,11 @@ const TextField = (props: TextFieldProps) => {
           <input
             id={id}
             className={twMerge(
-              'outline-none px-3 py-3 flex-1',
+              'px-3 py-3 flex-1',
+              'outline-none bg-transparent',
               cx?.input
             )}
-            type={''}
+            type={type}
             placeholder={placeholder}
             disabled={disabled}
             value={value}

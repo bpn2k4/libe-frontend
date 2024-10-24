@@ -22,42 +22,18 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@apis": [
-        "./src/apis/index.ts"
-      ],
-      "@assets/*": [
-        "./src/assets/*"
-      ],
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@configs": [
-        "./src/configs/index.ts"
-      ],
-      "@hooks": [
-        "./src/hooks/index.ts"
-      ],
-      "@layouts/*": [
-        "./src/layouts/*"
-      ],
-      "@libs/*": [
-        "./src/libs/*"
-      ],
-      "@pages/*": [
-        "./src/pages/*"
-      ],
-      "@slices/*": [
-        "./src/slices/*"
-      ],
-      "@types": [
-        "./src/types/index.ts"
-      ],
-      "@utils": [
-        "./src/utils/index.ts"
-      ],
-      "@utils/*": [
-        "./src/utils/*"
-      ],
+      "@apis": ["./src/apis/index.ts"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@configs": ["./src/configs/index.ts"],
+      "@hooks": ["./src/hooks/index.ts"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@libs/*": ["./src/libs/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@slices/*": ["./src/slices/*"],
+      "@types": ["./src/types/index.ts"],
+      "@utils": ["./src/utils/index.ts"],
+      "@utils/*": ["./src/utils/*"],
     }
   },
   "include": [

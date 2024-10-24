@@ -59,16 +59,16 @@ const ShopCartRight = () => {
 
 const CardItem = (props: CardItemProps) => {
 
-  const { } = props
+  const { className } = props
 
   return (
-    <div className='w-full py-3 bg-yellow-400 flex flex-row'>
+    <div className={twMerge('w-full py-3 bg-yellow-400 flex flex-row', className)}>
     </div>
   )
 }
 
 type CardItemProps = {
-
+  className?: string
 }
 
 export default ShopCartRight

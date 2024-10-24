@@ -1,4 +1,4 @@
-import { "🍚" as AdminNavbarMobile } from './AdminNavbar'
+import { AdminNavbarMobile } from './AdminNavbar'
 import CollectionModal from './CollectionModal'
 import ConfirmModal from './ConfirmModal'
 import ShopCartRight from './ShopCartRight'

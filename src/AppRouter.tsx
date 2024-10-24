@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
 import ShopLayout from '@layouts/ShopLayout'
 import AdminLayout from '@layouts/AdminLayout'
@@ -7,6 +7,7 @@ import CollectionManager from '@pages/CollectionManager'
 import ProductManager from '@pages/ProductManager'
 import StoreManager from '@pages/StoreManager'
 import UserManager from '@pages/UserManager'
+import NotFound from '@pages/NotFound'
 
 const Home = React.lazy(() => import('@pages/Home'))
 const Product = React.lazy(() => import('@pages/Product'))
@@ -67,6 +68,28 @@ const routes = [
       </AdminLayout>
     )
   },
+  {
+    path: '/admin',
+    element: (
+      <AdminLayout>
+        <Suspense>
+          <Dashboard />
+        </Suspense>
+      </AdminLayout>
+    )
+  },
+  {
+    path: '/admin/*',
+    element: (
+      <Navigate to="/admin" replace={true} />
+    )
+  },
+  {
+    path: '*',
+    element: (
+      <NotFound />
+    )
+  }
 ]
 
 const AppRouter = (props: AppRouterProps) => {

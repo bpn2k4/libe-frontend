@@ -9,10 +9,10 @@ const AdminLayout = (props: AdminLayoutProps) => {
   return (
     <Container className='overflow-y-hidden overflow-x-hidden'>
       <AdminHeader />
-      <div className='w-full h-full flex flex-row relative text-xs'>
+      <div className='w-full h-[calc(100%-56px)] flex flex-row relative text-xs'>
         <AdminNavbar />
-        <div className='flex-1 overflow-y-auto relative'>
-          <div className='absolute top-0 right-0 left-0 bottom-0'>
+        <div className='flex-1 relative'>
+          <div className='absolute top-0 right-0 left-0 bottom-0 overflow-y-auto'>
             {children}
           </div>
         </div>
