@@ -1,10 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Modal from './Modal'
-import ButtonIconRounded from './ButtonIconRounded'
-import { IconCancel } from './Icon'
 import TextField from './TextField'
-import { twMerge } from 'tailwind-merge'
 import Utils from '@utils'
 
 type CollectionModalConfig = {
@@ -27,7 +24,7 @@ const CollectionModal = () => {
 
   const { t } = useTranslation()
 
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
   const [config, setConfig] = useState({ ...defaultModalConfig })
 
   Utils.GlobalComponent.CollectionModal = {

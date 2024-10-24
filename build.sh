@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 GIT_COMMIT_HASH=$(git rev-parse --short HEAD)
 echo "Git commit hash: ${GIT_COMMIT_HASH}"

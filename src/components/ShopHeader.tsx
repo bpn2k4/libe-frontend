@@ -115,11 +115,12 @@ const GroupButtonMobile = () => {
           <IconCart />
           <span>{t('Cart')}</span>
         </button>
-        <button
+        <Link
+          to='/admin/collection'
           className='h-9 px-1 flex gap-2 flex-row items-center rounded hover:bg-rgb-215 dark:hover:bg-rgb-60' >
           <IconUser className='w-5 h-5' />
           <span>{t('User')}</span>
-        </button>
+        </Link>
       </div>
     </div>
   )

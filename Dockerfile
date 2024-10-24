@@ -1,8 +1,9 @@
-FROM node:21 as build
+FROM node:21 AS build
 WORKDIR /app
 COPY package.json package-lock.json /app/
 RUN npm install
-COPY ./public ./src index.html postcss.config.js tailwind.config.ts tsconfig.json tsconfig.node.json vite.config.ts /app/
+COPY ./public index.html postcss.config.js tailwind.config.ts tsconfig.json tsconfig.node.json vite.config.ts /app/
+COPY ./src /app/src
 RUN npm run build
 
 
