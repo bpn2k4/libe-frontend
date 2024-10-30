@@ -21,5 +21,14 @@
   "ColumnsList": "Danh sách cột",
   "PageNotFound": "Không tìm thấy trang",
   "PageNotFoundDescription": "Oops, Trang bạn đang tìm kiếm không tồn tại.",
-  "Home": "Trang chủ"
+  "Home": "Trang chủ",
+  "SortBy": "Sắp xếp theo",
+  "PriceAscending": "Giá tăng dần",
+  "PriceDescending": "Giá giảm dần",
+  "NameAscending": "Tên tăng dần",
+  "NameDescending": "Tên giảm dần",
+  "SaleAscending": "Khuyến mãi",
+  "Newest": "Mới nhất",
+  "Oldest": "Cũ nhất",
+  "Default": "Mặc định"
 }

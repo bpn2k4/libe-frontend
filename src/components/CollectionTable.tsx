@@ -6,6 +6,7 @@ import Utils from '@utils'
 import { useMemo, useState } from 'react'
 import { useCollectionManagerSelector, useDispatch } from '@hooks'
 import { setLimit, setPage } from '@slices/CollectionManager'
+import { Collection } from '@types'
 
 const collections_ = [
   { id: 100001, name: 'All products', slug: 'all' },
@@ -41,12 +42,13 @@ const CollectionTable = () => {
   })
 
   const [columnOptions, setColumnOptions] = useState([
-    { id: 1, checkbox: true, checked: true, value: '100001', label: t('Id'), disabled: true },
-    { id: 2, checkbox: true, checked: true, value: '100002', label: t('Name'), disabled: false },
-    { id: 3, checkbox: true, checked: true, value: '100003', label: t('Description'), disabled: false },
-    { id: 4, checkbox: true, checked: true, value: '100003', label: t('Hidden'), disabled: false },
-    { id: 5, checkbox: true, checked: true, value: '100003', label: t('CreatedAt'), disabled: false },
-    { id: 6, checkbox: true, checked: true, value: '100003', label: t('UpdatedAt'), disabled: false },
+    { id: 1, checkbox: true, checked: true, label: t('Id'), disabled: true },
+    { id: 2, checkbox: true, checked: true, label: t('Name'), disabled: false },
+    { id: 3, checkbox: true, checked: true, label: t('Slug'), disabled: false },
+    { id: 4, checkbox: true, checked: true, label: t('Description'), disabled: false },
+    { id: 5, checkbox: true, checked: true, label: t('Hidden'), disabled: false },
+    { id: 6, checkbox: true, checked: true, label: t('CreatedAt'), disabled: false },
+    { id: 7, checkbox: true, checked: true, label: t('UpdatedAt'), disabled: false },
   ])
 
   const dispatch = useDispatch()
@@ -60,12 +62,115 @@ const CollectionTable = () => {
       return [10, 10, 10, 25, 5, 15, 15, 10]
     }
 
+    if (key == '1-1-1-1-1-0') {
+      return [10, 10, 10, 25, 5, 15, 15, 10]
+    }
+
     return [10, 10, 10, 25, 5, 15, 15, 10]
   }, [columnOptions])
 
   const isCheckAll = useMemo(() => {
     return collections.slice(page * limit, page * limit + limit).every((collection) => collection.checked)
   }, [collections, page, limit])
+
+  const renderHeader = useMemo(() => {
+
+    const header: React.ReactNode[] = []
+    if (columnOptions[1].checked) {
+      header.push(
+        <Table.Cell>
+          <button className='flex flex-row gap-1'>
+            NAME
+            <IconSort className='w-h h-4' />
+          </button>
+        </Table.Cell>
+      )
+    }
+
+    if (columnOptions[2].checked) {
+      header.push(<Table.Cell>SLUG</Table.Cell>)
+    }
+    if (columnOptions[3].checked) {
+      header.push(
+        <Table.Cell>DESCRIPTION</Table.Cell>
+      )
+    }
+    if (columnOptions[4].checked) {
+      header.push(<Table.Cell>HIDDEN</Table.Cell>
+      )
+    }
+    if (columnOptions[5].checked) {
+      header.push(<Table.Cell>CREATED</Table.Cell>
+      )
+    }
+    if (columnOptions[6].checked) {
+      header.push(<Table.Cell>UPDATED</Table.Cell>
+      )
+    }
+
+    return header
+  }, [columnOptions])
+
+  const renderRow = (collection: Collection) => {
+    const nodes: React.ReactNode[] = [
+      <Table.Cell className='gap-2'>
+        <CheckBox
+          checked={collection.checked}
+          onChange={() => {
+            collection.checked = !collection.checked
+            setCollections([...collections])
+          }} />
+        {collection.id}
+      </Table.Cell>
+    ]
+
+    if (columnOptions[1].checked) {
+      nodes.push(<Table.Cell>{collection.name}</Table.Cell>)
+    }
+
+    if (columnOptions[2].checked) {
+      nodes.push(<Table.Cell>{'/' + collection.slug}</Table.Cell>)
+    }
+
+    if (columnOptions[3].checked) {
+      nodes.push(
+        <Table.Cell>
+          <span className='line-clamp-3'>
+            {collection.description}
+          </span>
+        </Table.Cell>
+      )
+    }
+
+    if (columnOptions[4].checked) {
+      nodes.push(<Table.Cell>{collection.hidden ? t('Hidden') : t('Show')}</Table.Cell>)
+    }
+
+    if (columnOptions[5].checked) {
+      nodes.push(<Table.Cell>{collection.createdAt}</Table.Cell>)
+    }
+
+    if (columnOptions[6].checked) {
+      nodes.push(<Table.Cell>{collection.updatedAt}</Table.Cell>)
+    }
+
+    nodes.push(
+      <Table.Cell className='gap-2'>
+        <button>
+          <IconGear className='w-5 h-5' />
+        </button>
+        <button>
+          <IconTrashCan className='w-5 h-5' />
+        </button>
+      </Table.Cell>
+    )
+
+    return {
+      key: collection.id,
+      checked: collection.checked,
+      nodes
+    }
+  }
 
   return (
     <div className='w-full rounded-lg border border-primary bg-secondary'>
@@ -75,9 +180,9 @@ const CollectionTable = () => {
         buttonAddText={t('AddNewCollection')}
         onClickButtonAdd={() => Utils.GlobalComponent.CollectionModal.show()} />
       <Table
-        minWidth={600}
+        minWidth={1200}
         columns={widthOfColumns}
-        baseWidth={60}
+        baseWidth={120}
         header={[
           <Table.Cell className='gap-2'>
             <CheckBox
@@ -92,74 +197,12 @@ const CollectionTable = () => {
               }} />
             ID
           </Table.Cell>,
-          <Table.Cell>
-            <button className='flex flex-row gap-1'>
-              NAME
-              <IconSort className='w-h h-4' />
-            </button>
-          </Table.Cell>,
-          <Table.Cell>
-            SLUG
-          </Table.Cell>,
-          <Table.Cell>
-            DESCRIPTION
-          </Table.Cell>,
-          <Table.Cell>
-            STATUS
-          </Table.Cell>,
-          <Table.Cell>
-            CREATED
-          </Table.Cell>,
-          <Table.Cell>
-            UPDATED
-          </Table.Cell>,
+          ...renderHeader,
           <Table.Cell>
             MANAGER
           </Table.Cell>,
         ]}
-        rows={collections.slice(page * limit, (page + 1) * limit).map((collection) => ({
-          key: collection.id,
-          checked: collection.checked,
-          nodes: [
-            <Table.Cell className='gap-2'>
-              <CheckBox
-                checked={collection.checked}
-                onChange={() => {
-                  collection.checked = !collection.checked
-                  setCollections([...collections])
-                }} />
-              {collection.id}
-            </Table.Cell>,
-            <Table.Cell>
-              {collection.name}
-            </Table.Cell>,
-            <Table.Cell>
-              {'/' + collection.slug}
-            </Table.Cell>,
-            <Table.Cell className=''>
-              <span className='line-clamp-3'>
-                {collection.description}
-              </span>
-            </Table.Cell>,
-            <Table.Cell>
-              {collection.hidden ? t('Hidden') : t('Show')}
-            </Table.Cell>,
-            <Table.Cell>
-              {collection.createdAt}
-            </Table.Cell>,
-            <Table.Cell>
-              {collection.updatedAt}
-            </Table.Cell>,
-            <Table.Cell className='gap-2'>
-              <button>
-                <IconGear className='w-5 h-5' />
-              </button>
-              <button>
-                <IconTrashCan className='w-5 h-5' />
-              </button>
-            </Table.Cell>,
-          ]
-        }))} />
+        rows={collections.slice(page * limit, (page + 1) * limit).map((collection) => renderRow(collection))} />
       <Table.Footer
         page={page + 1}
         limit={limit}

@@ -7,7 +7,7 @@ import Select, { SelectOption } from './Select'
 
 const Table = (props: TableProps) => {
 
-  const { className, cx, minWidth = 600, columns, header = [], rows = [], baseWidth = 60 } = props
+  const { className, cx, minWidth = 1200, columns, header = [], rows = [], baseWidth = 120 } = props
 
   return (
     <div className={twMerge(

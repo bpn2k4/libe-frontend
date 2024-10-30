@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { twMerge } from 'tailwind-merge'
 
 import Utils from '@utils'
@@ -12,70 +12,76 @@ const ShopMenuLeft = () => {
 
   const [show, setShow] = useState(false)
 
+  const { pathname } = useLocation()
+
   Utils.GlobalComponent.ShopMenuLeft = {
     isShow: show,
     show: () => {
       setShow(true)
     },
     hide: () => {
-      setShow(true)
+      setShow(false)
     }
   }
 
   const collections: ButtonCollection[] = [
     {
       name: 'NEW IN',
-      link: '/',
+      link: '/collections/new-in',
       items: []
     },
     {
       name: 'CHÀO MÙA HOA | TẾT COLLECTION',
-      link: '/',
+      link: '/collections/tet-collection',
       items: []
     },
     {
       name: 'THONG DONG ĐÓN TẾT | EDITORIALS',
-      link: '/',
+      link: '/collections/editorials',
       items: []
     },
     {
       name: 'LUCKY & RED-Y SPRING ARRIVALS',
-      link: '/',
+      link: '/collections/spring-arrivals',
       items: []
     },
     {
       name: 'SALE',
-      link: '/',
+      link: '/collections/sale',
       items: [
-        { name: 'SALE TO 10%', link: '/' },
-        { name: 'SALE TO 20%', link: '/' },
-        { name: 'SALE TO 30%', link: '/' },
+        { name: 'SALE TO 10%', link: '/collections/sale-10' },
+        { name: 'SALE TO 30%', link: '/collections/sale-20' },
+        { name: 'SALE TO 50%', link: '/collections/sale-30' },
       ]
     },
     {
       name: 'SHOP',
-      link: '/',
+      link: '/collections',
       items: [
-        { name: 'ALL', link: '/' },
-        { name: 'TROUSERS', link: '/' },
-        { name: 'SKIRTS & SHORTS', link: '/' },
-        { name: 'DRESSES & JUMPSUITS', link: '/' },
+        { name: 'ALL', link: '/collections/all' },
+        { name: 'TROUSERS', link: '/collections/trousers' },
+        { name: 'SKIRTS & SHORTS', link: '/collections/skirts-shorts' },
+        { name: 'DRESSES & JUMPSUITS', link: '/collections/dresses-jumpsuits' },
       ]
     },
     {
       name: 'DENIM WEAR',
-      link: '/',
+      link: '/collections/denim-ware',
       items: []
     },
     {
       name: 'LIBÉ GOODS',
-      link: '/',
+      link: '/collections/libe-goods',
       items: []
     },
   ]
 
   const _show = useDebounce(show, show ? 0 : 400)
   const __show = useDebounce(show, show ? 100 : 0)
+
+  useEffect(() => {
+    setShow(false)
+  }, [pathname])
 
   return (
     _show ? (
@@ -124,12 +130,16 @@ const ButtonCollection = (props: ButtonCollectionProps) => {
   return (
     <div role='button' className='w-full flex flex-col'>
       {items.length == 0 ? (
-        <Link className='block pl-2 leading-8 text-left rounded overflow-hidden hover:bg-rgb-215 hover:dark:bg-rgb-60 transition-all' to={link}>
+        <Link
+          to={link}
+          className='block pl-2 leading-8 text-left rounded overflow-hidden hover:bg-rgb-215 hover:dark:bg-rgb-60 transition-all'>
           {name}
         </Link>
       ) : (
         <div className='flex flex-row items-center h-8'>
-          <Link className='px-2 leading-8 rounded hover:bg-rgb-215 hover:dark:bg-rgb-60 flex-1' to={link}>
+          <Link
+            to={link}
+            className='px-2 leading-8 rounded hover:bg-rgb-215 hover:dark:bg-rgb-60 flex-1'>
             {name}
           </Link>
           <button
@@ -145,11 +155,11 @@ const ButtonCollection = (props: ButtonCollectionProps) => {
       {items.map(({ name, link }, index) => (
         <Link
           key={index}
+          to={link}
           className={twMerge(
             'block ml-6 pl-2 rounded overflow-hidden text-left hover:bg-rgb-215 hover:dark:bg-rgb-60 transition-all ',
             show ? 'leading-8' : 'leading-[0px]'
-          )}
-          to={link}>
+          )}>
           {name}
         </Link>
       ))}

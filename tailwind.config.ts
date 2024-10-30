@@ -89,6 +89,8 @@ const config: Config = {
         '2/3': '2 / 3',
         '9/16': '9 / 16',
         '16/9': '16 / 9',
+        '2/1': '2 / 1',
+        '3/1': '3 / 1',
       },
       animation: {
         'skeleton': 'skeleton 1s linear infinite',

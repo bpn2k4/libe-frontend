@@ -8,6 +8,8 @@ import ProductManager from '@pages/ProductManager'
 import StoreManager from '@pages/StoreManager'
 import UserManager from '@pages/UserManager'
 import NotFound from '@pages/NotFound'
+import CollectionDetail from '@pages/CollectionDetail'
+import Collection from '@pages/Collection'
 
 const Home = React.lazy(() => import('@pages/Home'))
 const Product = React.lazy(() => import('@pages/Product'))
@@ -25,8 +27,34 @@ const routes = [
     )
   },
   {
-    path: '/product',
-    element: <Product />
+    path: '/collections',
+    element: (
+      <ShopLayout>
+        <Suspense>
+          <Collection />
+        </Suspense>
+      </ShopLayout>
+    )
+  },
+  {
+    path: '/collections/*',
+    element: (
+      <ShopLayout>
+        <Suspense>
+          <CollectionDetail />
+        </Suspense>
+      </ShopLayout>
+    )
+  },
+  {
+    path: '/products',
+    element: (
+      <ShopLayout>
+        <Suspense>
+          <Product />
+        </Suspense>
+      </ShopLayout>
+    )
   },
   {
     path: '/admin/collection',
