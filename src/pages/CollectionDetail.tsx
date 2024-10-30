@@ -12,7 +12,7 @@ const CollectionDetail = () => {
 
   const { t } = useTranslation()
 
-  const [collection, setCollection] = useState({
+  const [collection,] = useState({
     name: 'DENIM WEAR',
     description: 'Shop our Denim Ware line with all the elegant and comfy pieces suitable for both office and outing.',
   })
