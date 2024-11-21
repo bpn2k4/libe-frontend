@@ -7,7 +7,7 @@ const ProductCardItem = (props: ProductCardItemProps) => {
 
   return (
     <div className='w-full'>
-      <Link to='/products' className='block hover:-translate-y-[2px] transition-transform'>
+      <Link to='/products/ruffle-embroidered-skirts' className='block hover:-translate-y-0.5 transition-transform'>
         <div className='w-full aspect-2/3 relative'>
           <Image
             className='w-full h-full'
@@ -20,7 +20,7 @@ const ProductCardItem = (props: ProductCardItemProps) => {
           </div>
         </div>
         <div className='mt-2'>
-          <h3 className='line-clamp-2'>{name}</h3>
+          <h3 className='line-clamp-2 font-semibold'>{name}</h3>
         </div>
         <div className='mt-1'>
           <span>{price.toLocaleString()}₫</span>

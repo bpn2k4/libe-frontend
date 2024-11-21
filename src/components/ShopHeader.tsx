@@ -13,7 +13,7 @@ import ToggleTheme from './ToggleTheme'
 const ShopHeader = () => {
 
   return (
-    <header className='w-full h-20 px-3 flex flex-row border-b relative z-5'>
+    <header className='w-full h-20 px-3 flex flex-row border-b relative z-5 xl:px-0'>
       <div className='absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center'>
         <Link to='/'>
           <h1 className='text-4xl font-bold p-4'>LIBÉ</h1>
@@ -26,7 +26,7 @@ const ShopHeader = () => {
       <div className='z-1'>
         <HeaderLeft />
       </div>
-    </header >
+    </header>
   )
 }
 
@@ -44,7 +44,7 @@ const HeaderLeft = () => {
 const GroupButton = () => {
 
   return (
-    <div className='h-11 flex flex-row items-center w-0 md:w-[128px] transition-all overflow-hidden gap-1 duration-500'>
+    <div className='h-11 flex flex-row items-center w-0 md:w-32 transition-all overflow-hidden gap-1 duration-500'>
       <ButtonIconRounded
         icon={<IconSearch />}
         onClick={() => Utils.GlobalComponent.ShopSearchRight.show()} />

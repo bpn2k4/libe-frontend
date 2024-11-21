@@ -7,6 +7,7 @@ import CollectionSlider from '@components/CollectionSlider'
 import Select from '@components/Select'
 import Pagination from '@components/Pagination'
 import GridProduct from '@components/GridProduct'
+import Utils from '@utils'
 
 const CollectionDetail = () => {
 
@@ -73,16 +74,21 @@ const CollectionDetail = () => {
     return products
   }
 
+  useEffect(() => {
+    Utils.GlobalComponent.Container.scrollToTop()
+  }, [])
+
   return (
     <div className='w-full'>
       <Breadcrumb
+        className='px-4 xl:px-0'
         items={breadcrumbItems}
       />
       <CollectionSlider
         name={collection.name}
         description={collection.description} />
 
-      <div className='w-full flex flex-row justify-between px-4 py-4'>
+      <div className='w-full flex flex-row justify-between px-4 py-4 xl:px-0'>
         <span>{collection.name}</span>
         <div className='flex flex-row items-center gap-2'>
           <span>{t('SortBy')}</span>
@@ -100,7 +106,7 @@ const CollectionDetail = () => {
         </div>
       </div>
       <GridProduct
-        className='w-full px-4 max-w-screen-2xl mx-auto'
+        className='w-full px-4 xl:px-0'
         skeleton={loading}
         products={getProducts().slice((page - 1) * 20, page * 20)} />
 
@@ -112,7 +118,7 @@ const CollectionDetail = () => {
           totalPage={10} />
       </div>
 
-    </div >
+    </div>
   )
 }
 

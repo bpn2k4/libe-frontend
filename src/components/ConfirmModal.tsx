@@ -34,7 +34,7 @@ const ConfirmModal = () => {
         </span>
       </Modal.Header>
       <div className='flex items-center justify-center py-5'>
-        <div className='w-32 h-32 rounded-[32px] border-[10px] flex items-center justify-center'>
+        <div className='w-32 h-32 rounded-32 border-10 flex items-center justify-center'>
           <IconTrashCan className='w-16 h-16' />
         </div>
       </div>

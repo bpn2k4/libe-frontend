@@ -90,7 +90,7 @@ const ShopMenuLeft = () => {
           <div className='fixed z-5 top-0 left-0 right-0 bottom-0 bg-black/50' onClick={() => setShow(false)} />
         )}
         <div className={twMerge(
-          'fixed z-6 top-0 left-0 bottom-0 w-full md:max-w-[400px]',
+          'fixed z-6 top-0 left-0 bottom-0 w-full md:max-w-100',
           'bg-primary text-primary font-semibold origin-left transition-transform duration-300',
           __show ? 'translate-x-0' : '-translate-x-full'
         )}>
@@ -153,15 +153,20 @@ const ButtonCollection = (props: ButtonCollectionProps) => {
         </div>
       )}
       {items.map(({ name, link }, index) => (
-        <Link
+        <div
           key={index}
-          to={link}
           className={twMerge(
-            'block ml-6 pl-2 rounded overflow-hidden text-left hover:bg-rgb-215 hover:dark:bg-rgb-60 transition-all ',
-            show ? 'leading-8' : 'leading-[0px]'
+            'w-full overflow-hidden transition-all',
+            show ? 'h-8' : 'h-0',
           )}>
-          {name}
-        </Link>
+          <Link
+            to={link}
+            className={twMerge(
+              'block h-8 ml-6 pl-2 leading-8 text-left rounded hover:bg-rgb-215 hover:dark:bg-rgb-60',
+            )}>
+            {name}
+          </Link>
+        </div>
       ))}
     </div>
   )

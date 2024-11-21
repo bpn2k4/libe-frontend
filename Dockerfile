@@ -9,6 +9,7 @@ RUN npm run build
 
 FROM nginx:1.25
 COPY --from=build /app/dist /usr/share/nginx/html
+COPY ./env.example.js /usr/share/nginx/html/env.js
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 

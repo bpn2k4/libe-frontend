@@ -40,7 +40,7 @@ const CollectionModal = () => {
   return (
     <Modal
       show={show}
-      className='max-w-[600px] flex flex-col text-xs'
+      className='max-w-150 flex flex-col text-xs'
       onClickOutsize={() => setShow(false)}>
 
       <Modal.Header onClickButtonClose={() => setShow(false)}>
@@ -58,7 +58,7 @@ const CollectionModal = () => {
           textarea
           label='Description'
           value={config.collection.description}
-          cx={{ input: 'h-[100px]' }}
+          cx={{ input: 'h-25' }}
           onChange={e => {
             config.collection.description = e.target.value
             setConfig({ ...config })

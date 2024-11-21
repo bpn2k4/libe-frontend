@@ -29,6 +29,9 @@ const AdminNavbarMobile = {
   show: () => { },
   hide: () => { },
 }
+const Container = {
+  scrollToTop: () => { },
+}
 
 const GlobalComponent = {
   CollectionModal,
@@ -36,7 +39,8 @@ const GlobalComponent = {
   ShopCartRight,
   ShopSearchRight,
   AdminNavbar,
-  AdminNavbarMobile
+  AdminNavbarMobile,
+  Container
 }
 
 export default GlobalComponent

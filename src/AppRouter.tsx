@@ -10,6 +10,7 @@ import UserManager from '@pages/UserManager'
 import NotFound from '@pages/NotFound'
 import CollectionDetail from '@pages/CollectionDetail'
 import Collection from '@pages/Collection'
+import ProductDetail from '@pages/ProductDetail'
 
 const Home = React.lazy(() => import('@pages/Home'))
 const Product = React.lazy(() => import('@pages/Product'))
@@ -52,6 +53,16 @@ const routes = [
       <ShopLayout>
         <Suspense>
           <Product />
+        </Suspense>
+      </ShopLayout>
+    )
+  },
+  {
+    path: '/products/*',
+    element: (
+      <ShopLayout>
+        <Suspense>
+          <ProductDetail />
         </Suspense>
       </ShopLayout>
     )

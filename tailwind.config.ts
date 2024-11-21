@@ -32,6 +32,30 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      space: {
+        '0.5': '0.125rem',
+        '2.5': '0.625rem',
+        '4.5': '1.125rem',
+      },
+      height: {
+        '25': '6.25rem',
+      },
+      maxWidth: {
+        '100': '25rem',
+        '150': '37.5rem',
+      },
+      maxHeight: {
+        '42': '10.5rem',
+      },
+      minHeight: {
+        '50': '12.5rem',
+      },
+      borderWidth: {
+        '10': '10px',
+      },
+      borderRadius: {
+        '32': '32px',
+      },
       scale: {
         '97': '0.97',
         '98': '0.98',

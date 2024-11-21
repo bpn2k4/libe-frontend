@@ -29,6 +29,10 @@ const Carousel = (props: CarouselProps) => {
       left: activeIndex * containerRef.current.clientWidth,
       behavior: 'smooth',
     })
+
+    console.log(containerRef.current.clientWidth);
+    console.log(childrenRef.current[0]?.clientWidth);
+
   }, [activeIndex])
 
   useEffect(() => {
@@ -50,7 +54,7 @@ const Carousel = (props: CarouselProps) => {
       <div
         ref={containerRef}
         className={twMerge(
-          'w-full snap-x snap-mandatory whitespace-nowrap overflow-x-scroll no-scrollbar',
+          'w-full snap-x snap-mandatory whitespace-nowrap overflow-x-scroll',
           cx?.container
         )}>
         {Children.toArray(children).map((child, index) => (
@@ -58,7 +62,7 @@ const Carousel = (props: CarouselProps) => {
             ref={ref => childrenRef.current[index] = ref}
             key={index}
             className={twMerge(
-              'snap-start inline-block w-full',
+              'inline-block w-1/2',
               cx?.item
             )}>
             {child}
@@ -80,7 +84,7 @@ const Carousel = (props: CarouselProps) => {
                 className={twMerge(
                   'w-2 h-2 rounded-full transition-all',
                   index === activeIndex ? 'bg-primary' : 'bg-rgb-100',
-                  index === activeIndex && 'w-[10px] h-[10px]'
+                  index === activeIndex && 'w-2.5 h-2.5'
                 )} />
             </button>
           ))}

@@ -80,7 +80,7 @@ const Select = (props: SelectProps) => {
           )}
           ref={menuRef}>
           <div className={twMerge(
-            'w-full max-h-[168px] py-1',
+            'w-full max-h-42 py-1',
             'bg-secondary rounded overflow-y-auto scrollbar-w-4',
             'border border-primary',
             cx?.menu

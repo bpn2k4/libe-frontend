@@ -22,9 +22,9 @@ const Modal = (props: ModalProps) => {
           className="absolute top-0 left-0 right-0 bottom-0 z-1"
           onClick={onClickOutsize} />
         <div className={twMerge(
-          'z-2 mx-3 w-full max-w-[400px] min-h-[200px] max-h-[calc(100dvh-40px)] overflow-hidden',
-          'rounded-lg bg-rgb-250 dark:bg-rgb-20 text-rgb-15 dark:text-rgb-240',
-          'border border-primary',
+          'z-2 mx-3 w-full max-w-100 min-h-50 max-h-[calc(100dvh-40px)] overflow-hidden',
+          'bg-rgb-250 dark:bg-rgb-20 text-rgb-15 dark:text-rgb-240',
+          'rounded-lg border border-primary',
           className,
           cx?.content
         )}>

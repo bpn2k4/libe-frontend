@@ -10,8 +10,7 @@ const Breadcrumb = (props: BreadcrumbProps) => {
 
   return (
     <div className={twMerge(
-      'px-4 py-4',
-      'flex flex-row items-center flex-wrap gap-x-2 gap-y-1',
+      'py-4 flex flex-row items-center flex-wrap gap-x-2 gap-y-1',
       className
     )}>
       {items.map(({ name, path }, index) => (
